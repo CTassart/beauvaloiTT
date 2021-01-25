@@ -4,7 +4,7 @@
 <br>
 
 
-## <span style="color:darkGreen"> **Liste des joueurs** </span>
+## <span style="color:darkGreen"> **Liste des joueurs** </span> 
 
 ```{r, echo = FALSE, fig.align='center',message=FALSE, warning=FALSE, include=FALSE, paged.print=FALSE}
 # Fonction pour formatter les tableaux

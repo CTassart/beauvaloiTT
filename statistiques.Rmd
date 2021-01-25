@@ -26,7 +26,7 @@ ggplot(results, aes(x = xs, y = ys, color = alpha)) +
 
 ---
 
-## <span style="color:darkred"> **Evolution des joueurs depuis 2005** </span>
+## <span style="color:darkred"> **Evolution des joueurs** </span> , du <span style="color:black"> **Beauvalois TT** </span>, depuis 2005
 
 
 ```{r, echo = FALSE, fig.align='center'}

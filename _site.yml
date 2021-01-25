@@ -9,6 +9,8 @@ navbar:
       href: actualites.html
     - text: "Joueurs"     ##### the new
       href: joueurs.html  ##### stuff
+    - text: "Les rencontres"     ##### the new
+      href: rencontres.html  ##### stuff
     - text: "Statistiques"     ##### the new
       href: statistiques.html  ##### stuff
     - text: "Documents"     ##### the new

@@ -6,23 +6,24 @@ title: "A propos de nous"
 
 - __Nom du club :__ Beauvalois TT
 - __Lieu d'activité :__ "Gymnase Pierre Sueur"
-- __Hobbies:__ Club de tennis de table. 
+- __Hobbies :__ Club de tennis de table.
+- __site :__ https://ctassart.github.io/beauvaloiTT/index.html
 
 ---
 
 # <span style="color:darkBlue"> **Notre page Facebook** </span>
 
-![https://www.facebook.com/beauvaltennisdetable](2_Actualites/logo Fb.png)
+![https://www.facebook.com/beauvaltennisdetable](www/Actualites/logo Fb.png)
 
 
 ---
 
 # <span style="color:darkBlue"> **Notre logo** </span>
 
-![](www/logo.jpg)
+![](www/Actualites/logo.jpg)
 
 ---
 
 # <span style="color:darkBlue"> **Notre dernière assemblée générale** </span>
-![](www/réunion ping.jpg)
+![](www/Actualites/réunion ping.jpg)
 
