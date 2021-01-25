@@ -1,6 +1,13 @@
 ---
 title: "Beauvalois Tennis de Table"
+output:
+  html_document:
+    df_print: paged
+    toc: yes
+    toc_depth: 2
+    toc_float: yes
 ---
+
 <br>
 
 
@@ -10,25 +17,7 @@ Le **Beauvalois tennis de Table** est un club de pratique de Tennis de Table
 
 ---
 
-## <span style="color:darkBlue"> **Tarifs** </span>
-
-- Juniors, Séniors , Vétérans (15 ans et +)
-  - 40 € la licence promotionnelle (entrainements)
-  - 70 € la licence traditionnelle (compétitions)
-
-- Minimes & Cadets (11 à 14 ans)
-  - 35 € la licence promotionnelle
-  - 50 € la licence traditionnelle
-
-- Poussins & Benjamins (8 à 10 ans)
-  - 35 € la licence promotionnelle
-  - 40 € la licence traditionnelle
-
-La troisième licence prise dans la même famille sera à moitié prix !
-
----
-
-## <span style="color:darkBlue"> **Entrainements & rencontres** </span>
+# <span style="color:darkBlue"> **Entrainements & rencontres** </span>
 - Entrainements  
   - lundi : 
        - à compter de 18h00 pour les adultes et adolescent·e·s.  
@@ -41,7 +30,7 @@ La troisième licence prise dans la même famille sera à moitié prix !
 
 ---
 
-## <span style="color:darkBlue"> **Profil de nos équipes** </span>
+# <span style="color:darkBlue"> **Profil de nos équipes** </span>
 
 ![](www/Actualites/stats.jpg)
 
@@ -76,6 +65,22 @@ Chaque week-end, on procède à un turn-over pour que tout le monde puisse jouer
 - Equipe 2 – 3072 points,
 - Equipe 3 – 2078 points.
 
+---
 
+# <span style="color:darkBlue"> **Tarifs** </span>
+
+- Juniors, Séniors , Vétérans (15 ans et +)
+  - 40 € la licence promotionnelle (entrainements)
+  - 70 € la licence traditionnelle (compétitions)
+
+- Minimes & Cadets (11 à 14 ans)
+  - 35 € la licence promotionnelle
+  - 50 € la licence traditionnelle
+
+- Poussins & Benjamins (8 à 10 ans)
+  - 35 € la licence promotionnelle
+  - 40 € la licence traditionnelle
+
+La troisième licence prise dans la même famille sera à moitié prix !
 
 ---

@@ -1,6 +1,13 @@
 ---
-  title: "Statistiques"
+title: "Statistiques"
+output:
+  html_document:
+    df_print: paged
+    toc: yes
+    toc_depth: 2
+    toc_float: yes
 ---
+
 <br>
 
 ```{r, echo = FALSE, fig.align='center'}
@@ -26,8 +33,7 @@ ggplot(results, aes(x = xs, y = ys, color = alpha)) +
 
 ---
 
-## <span style="color:darkred"> **Evolution des joueurs** </span> , du <span style="color:black"> **Beauvalois TT** </span>, depuis 2005
-
+# <span style="color:darkred"> **Evolution des joueurs** </span> , du <span style="color:black"> **Beauvalois TT** </span>, depuis 2005
 
 ```{r, echo = FALSE, fig.align='center'}
 library(billboarder)
@@ -51,3 +57,5 @@ billboarder() %>%
           caption = "Donnéess FFTT")
 
 ```
+
+# <span style="color:darkred"> **En cours de réalisation** </span>

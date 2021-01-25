@@ -1,10 +1,17 @@
 ---
-  title: "Les joueurs"
+title: "Les joueurs"
+output:
+  html_document:
+    df_print: paged
+    toc: yes
+    toc_depth: 2
+    toc_float: yes
 ---
+
 <br>
 
 
-## <span style="color:darkGreen"> **Liste des joueurs** </span> 
+# <span style="color:darkGreen"> **Liste des joueurs** </span> 
 
 ```{r, echo = FALSE, fig.align='center',message=FALSE, warning=FALSE, include=FALSE, paged.print=FALSE}
 # Fonction pour formatter les tableaux
@@ -64,15 +71,15 @@ listeJoueurs %>% arrange(Prénom)
 listeJoueurs %>% formaterTableau()
 ```
 
-## <span style="color:darkGreen"> **Répartition des joueurs** </span>
+# <span style="color:darkGreen"> **Répartition des joueurs** </span>
 
-### Par genre
+## Par genre
 ```{r, echo = FALSE, fig.align='center'}
 as.data.frame(listeJoueurs %>% count(Genre, sort = TRUE)) %>% rename(Nombre=n) %>%  formaterTableauSimple()
 
 ```
 
-### Par catégorie
+## Par catégorie
 
 ```{r, echo = FALSE, fig.align='center'}
 library(forcats)
@@ -83,12 +90,12 @@ as.data.frame(listeJoueurs %>% count(`Catégorie`, sort = TRUE)) %>% rename(Nomb
 
 ```
 
-### Par Classement
+## Par Classement
 ```{r, echo = FALSE, fig.align='center'}
 as.data.frame(listeJoueurs %>% count(Clast, sort = TRUE)) %>% rename(Nombre=n) %>%formaterTableauSimple()
 ```
 
-### Par type de licence
+## Par type de licence
 
 ```{r, echo = FALSE, fig.align='center'}
 as.data.frame(listeJoueurs %>% count(`Type de licence`, sort = TRUE)) %>% rename(Nombre=n) %>%formaterTableauSimple()

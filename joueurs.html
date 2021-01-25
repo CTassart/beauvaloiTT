@@ -20,9 +20,14 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
+<script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
 <script src="site_libs/htmlwidgets-1.5.2/htmlwidgets.js"></script>
 <link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
 <script src="site_libs/datatables-binding-0.16/datatables.js"></script>
@@ -281,6 +286,69 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
 
 </head>
 
@@ -288,6 +356,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -343,8 +421,8 @@ $(document).ready(function () {
 
 
 <p><br></p>
-<div id="liste-des-joueurs" class="section level2">
-<h2><span style="color:darkGreen"> <strong>Liste des joueurs</strong> </span></h2>
+<div id="liste-des-joueurs" class="section level1">
+<h1><span style="color:darkGreen"> <strong>Liste des joueurs</strong> </span></h1>
 <pre><code>##    N° Licence    Genre     Prénom Nom Date naissance      Type de licence            Catégorie       Clast Pts (début saison)
 ## 1     8020470 Masculin     Adrien  K.     29/04/2013 Promo (entrainement) joueur·se de -11 ans  Classé·e 5                500
 ## 2      807168 Masculin     Arnaud  C.     26/01/1966  Tradi (compétition) joueur·se de -60 ans  Classé·e 9                983
@@ -368,35 +446,37 @@ $(document).ready(function () {
 ## 20    8020277  Feminin    Pauline  D.     18/12/2012 Promo (entrainement) joueur·se de -11 ans  Classé·e 5                500
 ## 21    8019667 Masculin   Rodrigue  L.     28/06/1978  Tradi (compétition) joueur·se de -50 ans  Classé·e 5                500
 ## 22    8010606 Masculin     Thomas  C.     02/09/1991  Tradi (compétition) joueur·se de -40 ans Classé·e 11               1117</code></pre>
-<div id="htmlwidget-4ddc7ac3b6322bc13b71" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-4ddc7ac3b6322bc13b71">{"x":{"filter":"none","extensions":["Buttons","ColReorder","FixedColumns"],"data":[[8018770,807168,8010606,8020469,8019722,8020277,8017508,8019018,8013954,8017042,8020470,8019673,8019667,8018660,8014073,8014706,8015854,8016084,8014017,8016237,8020382,8015865],["Masculin","Masculin","Masculin","Feminin","Masculin","Feminin","Masculin","Feminin","Masculin","Masculin","Masculin","Masculin","Masculin","Masculin","Masculin","Masculin","Masculin","Masculin","Masculin","Masculin","Masculin","Masculin"],["Eric","Arnaud","Thomas","Maelys","Mathys","Pauline","Hugo","Blandine","Benjamin","Pascal","Adrien","Benoît","Rodrigue","Carl","Geoffrey","Jean-louis","Eric","Guylain","Christophe","Cedric","Ethan","Fabrice"],["B.","C.","C.","D.","D.","D.","F.","G.","H.","H.","K.","L.","L.","M.","M.","M.","O.","O.","P.","T.","T.","V."],["30/09/1964","26/01/1966","02/09/1991","03/11/2011","08/01/2011","18/12/2012","27/06/2001","01/11/1972","02/10/1994","04/05/1969","29/04/2013","13/09/1981","28/06/1978","08/08/2001","08/11/1977","07/01/1959","21/03/1978","10/08/1956","16/11/1970","21/03/1976","10/12/2005","22/08/1974"],["Tradi (compétition)","Tradi (compétition)","Tradi (compétition)","Promo (entrainement)","Promo (entrainement)","Promo (entrainement)","Tradi (compétition)","Tradi (compétition)","Tradi (compétition)","Tradi (compétition)","Promo (entrainement)","Tradi (compétition)","Tradi (compétition)","Tradi (compétition)","Tradi (compétition)","Tradi (compétition)","Tradi (compétition)","Promo (entrainement)","Tradi (compétition)","Tradi (compétition)","Tradi (compétition)","Tradi (compétition)"],["joueur·se de -60 ans","joueur·se de -60 ans","joueur·se de -40 ans","joueur·se de -11 ans","joueur·se de -11 ans","joueur·se de -11 ans","joueur·se de -20 ans","joueur·se de -50 ans","joueur·se de -40 ans","joueur·se de -60 ans","joueur·se de -11 ans","joueur·se de -40 ans","joueur·se de -50 ans","joueur·se de -20 ans","joueur·se de -50 ans","joueur·se de -70 ans","joueur·se de -50 ans","joueur·se de -70 ans","joueur·se de -60 ans","joueur·se de -50 ans","joueur·se de -16 ans","joueur·se de -50 ans"],["Classé·e 5","Classé·e 9","Classé·e 11","Classé·e 5","Classé·e 5","Classé·e 5","Classé·e 5","Classé·e 5","Classé·e 8","Classé·e 6","Classé·e 5","Classé·e 5","Classé·e 5","Classé·e 5","Classé·e 9","Classé·e 5","Classé·e 8","Classé·e 5","Classé·e 9","Classé·e 7","Classé·e 5","Classé·e 9"],[578,983,1117,500,500,500,519,500,811,626,500,500,500,500,929,500,889,500,974,735,500,910]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>N° Licence<\/th>\n      <th>Genre<\/th>\n      <th>Prénom<\/th>\n      <th>Nom<\/th>\n      <th>Date naissance<\/th>\n      <th>Type de licence<\/th>\n      <th>Catégorie<\/th>\n      <th>Clast<\/th>\n      <th>Pts (début saison)<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Blfrtip","buttons":["colvis","csv","excel","pdf"],"colReorder":true,"lengthMenu":[[5,25,50,-1],["5","25","50","Tout"]],"pageLength":10,"columnDefs":[{"className":"dt-right","targets":[0,8]}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-fa0342fb03134df1a421" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-fa0342fb03134df1a421">{"x":{"filter":"none","extensions":["Buttons","ColReorder","FixedColumns"],"data":[[8018770,807168,8010606,8020469,8019722,8020277,8017508,8019018,8013954,8017042,8020470,8019673,8019667,8018660,8014073,8014706,8015854,8016084,8014017,8016237,8020382,8015865],["Masculin","Masculin","Masculin","Feminin","Masculin","Feminin","Masculin","Feminin","Masculin","Masculin","Masculin","Masculin","Masculin","Masculin","Masculin","Masculin","Masculin","Masculin","Masculin","Masculin","Masculin","Masculin"],["Eric","Arnaud","Thomas","Maelys","Mathys","Pauline","Hugo","Blandine","Benjamin","Pascal","Adrien","Benoît","Rodrigue","Carl","Geoffrey","Jean-louis","Eric","Guylain","Christophe","Cedric","Ethan","Fabrice"],["B.","C.","C.","D.","D.","D.","F.","G.","H.","H.","K.","L.","L.","M.","M.","M.","O.","O.","P.","T.","T.","V."],["30/09/1964","26/01/1966","02/09/1991","03/11/2011","08/01/2011","18/12/2012","27/06/2001","01/11/1972","02/10/1994","04/05/1969","29/04/2013","13/09/1981","28/06/1978","08/08/2001","08/11/1977","07/01/1959","21/03/1978","10/08/1956","16/11/1970","21/03/1976","10/12/2005","22/08/1974"],["Tradi (compétition)","Tradi (compétition)","Tradi (compétition)","Promo (entrainement)","Promo (entrainement)","Promo (entrainement)","Tradi (compétition)","Tradi (compétition)","Tradi (compétition)","Tradi (compétition)","Promo (entrainement)","Tradi (compétition)","Tradi (compétition)","Tradi (compétition)","Tradi (compétition)","Tradi (compétition)","Tradi (compétition)","Promo (entrainement)","Tradi (compétition)","Tradi (compétition)","Tradi (compétition)","Tradi (compétition)"],["joueur·se de -60 ans","joueur·se de -60 ans","joueur·se de -40 ans","joueur·se de -11 ans","joueur·se de -11 ans","joueur·se de -11 ans","joueur·se de -20 ans","joueur·se de -50 ans","joueur·se de -40 ans","joueur·se de -60 ans","joueur·se de -11 ans","joueur·se de -40 ans","joueur·se de -50 ans","joueur·se de -20 ans","joueur·se de -50 ans","joueur·se de -70 ans","joueur·se de -50 ans","joueur·se de -70 ans","joueur·se de -60 ans","joueur·se de -50 ans","joueur·se de -16 ans","joueur·se de -50 ans"],["Classé·e 5","Classé·e 9","Classé·e 11","Classé·e 5","Classé·e 5","Classé·e 5","Classé·e 5","Classé·e 5","Classé·e 8","Classé·e 6","Classé·e 5","Classé·e 5","Classé·e 5","Classé·e 5","Classé·e 9","Classé·e 5","Classé·e 8","Classé·e 5","Classé·e 9","Classé·e 7","Classé·e 5","Classé·e 9"],[578,983,1117,500,500,500,519,500,811,626,500,500,500,500,929,500,889,500,974,735,500,910]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>N° Licence<\/th>\n      <th>Genre<\/th>\n      <th>Prénom<\/th>\n      <th>Nom<\/th>\n      <th>Date naissance<\/th>\n      <th>Type de licence<\/th>\n      <th>Catégorie<\/th>\n      <th>Clast<\/th>\n      <th>Pts (début saison)<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Blfrtip","buttons":["colvis","csv","excel","pdf"],"colReorder":true,"lengthMenu":[[5,25,50,-1],["5","25","50","Tout"]],"pageLength":10,"columnDefs":[{"className":"dt-right","targets":[0,8]}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
-<div id="répartition-des-joueurs" class="section level2">
-<h2><span style="color:darkGreen"> <strong>Répartition des joueurs</strong> </span></h2>
-<div id="par-genre" class="section level3">
-<h3>Par genre</h3>
-<div id="htmlwidget-14b00b22f09f45a68d76" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-14b00b22f09f45a68d76">{"x":{"filter":"none","extensions":["Buttons","ColReorder","FixedColumns"],"data":[["Masculin","Feminin"],[19,3]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Genre<\/th>\n      <th>Nombre<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Blfrtip","lengthMenu":[[5,25,50,-1],["5","25","50","Tout"]],"pageLength":10,"columnDefs":[{"className":"dt-right","targets":1}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div id="répartition-des-joueurs" class="section level1">
+<h1><span style="color:darkGreen"> <strong>Répartition des joueurs</strong> </span></h1>
+<div id="par-genre" class="section level2">
+<h2>Par genre</h2>
+<div id="htmlwidget-d05b1a9751a8d0f29887" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-d05b1a9751a8d0f29887">{"x":{"filter":"none","extensions":["Buttons","ColReorder","FixedColumns"],"data":[["Masculin","Feminin"],[19,3]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Genre<\/th>\n      <th>Nombre<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Blfrtip","lengthMenu":[[5,25,50,-1],["5","25","50","Tout"]],"pageLength":10,"columnDefs":[{"className":"dt-right","targets":1}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
-<div id="par-catégorie" class="section level3">
-<h3>Par catégorie</h3>
-<div id="htmlwidget-bd7339abf5874cc6693f" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-bd7339abf5874cc6693f">{"x":{"filter":"none","extensions":["Buttons","ColReorder","FixedColumns"],"data":[["joueur·se de -50 ans","joueur·se de -11 ans","joueur·se de -60 ans","joueur·se de -40 ans","joueur·se de -20 ans","joueur·se de -70 ans","joueur·se de -16 ans"],[6,4,4,3,2,2,1]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Catégorie<\/th>\n      <th>Nombre<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Blfrtip","lengthMenu":[[5,25,50,-1],["5","25","50","Tout"]],"pageLength":10,"columnDefs":[{"className":"dt-right","targets":1}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div id="par-catégorie" class="section level2">
+<h2>Par catégorie</h2>
+<div id="htmlwidget-26bdb333cac59e6254be" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-26bdb333cac59e6254be">{"x":{"filter":"none","extensions":["Buttons","ColReorder","FixedColumns"],"data":[["joueur·se de -50 ans","joueur·se de -11 ans","joueur·se de -60 ans","joueur·se de -40 ans","joueur·se de -20 ans","joueur·se de -70 ans","joueur·se de -16 ans"],[6,4,4,3,2,2,1]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Catégorie<\/th>\n      <th>Nombre<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Blfrtip","lengthMenu":[[5,25,50,-1],["5","25","50","Tout"]],"pageLength":10,"columnDefs":[{"className":"dt-right","targets":1}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
-<div id="par-classement" class="section level3">
-<h3>Par Classement</h3>
-<div id="htmlwidget-65d93085f7e36b5e8dbb" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-65d93085f7e36b5e8dbb">{"x":{"filter":"none","extensions":["Buttons","ColReorder","FixedColumns"],"data":[["Classé·e 5","Classé·e 9","Classé·e 8","Classé·e 11","Classé·e 6","Classé·e 7"],[13,4,2,1,1,1]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Clast<\/th>\n      <th>Nombre<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Blfrtip","lengthMenu":[[5,25,50,-1],["5","25","50","Tout"]],"pageLength":10,"columnDefs":[{"className":"dt-right","targets":1}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div id="par-classement" class="section level2">
+<h2>Par Classement</h2>
+<div id="htmlwidget-684629011fe4223b0f55" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-684629011fe4223b0f55">{"x":{"filter":"none","extensions":["Buttons","ColReorder","FixedColumns"],"data":[["Classé·e 5","Classé·e 9","Classé·e 8","Classé·e 11","Classé·e 6","Classé·e 7"],[13,4,2,1,1,1]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Clast<\/th>\n      <th>Nombre<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Blfrtip","lengthMenu":[[5,25,50,-1],["5","25","50","Tout"]],"pageLength":10,"columnDefs":[{"className":"dt-right","targets":1}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
-<div id="par-type-de-licence" class="section level3">
-<h3>Par type de licence</h3>
-<div id="htmlwidget-03c958a22eaa07d1f57b" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-03c958a22eaa07d1f57b">{"x":{"filter":"none","extensions":["Buttons","ColReorder","FixedColumns"],"data":[["Tradi (compétition)","Promo (entrainement)"],[17,5]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Type de licence<\/th>\n      <th>Nombre<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Blfrtip","lengthMenu":[[5,25,50,-1],["5","25","50","Tout"]],"pageLength":10,"columnDefs":[{"className":"dt-right","targets":1}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div id="par-type-de-licence" class="section level2">
+<h2>Par type de licence</h2>
+<div id="htmlwidget-32d691579a5ae7a55b30" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-32d691579a5ae7a55b30">{"x":{"filter":"none","extensions":["Buttons","ColReorder","FixedColumns"],"data":[["Tradi (compétition)","Promo (entrainement)"],[17,5]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Type de licence<\/th>\n      <th>Nombre<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Blfrtip","lengthMenu":[[5,25,50,-1],["5","25","50","Tout"]],"pageLength":10,"columnDefs":[{"className":"dt-right","targets":1}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 
 
 
+</div>
+</div>
 
 </div>
 
@@ -429,6 +509,32 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

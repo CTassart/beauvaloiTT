@@ -1,9 +1,18 @@
 ---
 title: "Les actualités"
+output:
+  html_document:
+    df_print: paged
+    toc: yes
+    toc_depth: 2
+    toc_float: yes
 ---
+
 <br>
 
 ---
+
+# Actualités 2021
 
 ## <span style="color:steelBlue"> **re-re-suspension d'entrainement des jeunes** </span>
 
@@ -28,5 +37,7 @@ En espérant que 2021 nous permettent de nous retrouver et de taper la balle ens
 🏓 **Beauvalois TT** 🏓
 
 ---
+
+# Actualités 2020
 
 

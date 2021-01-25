@@ -20,9 +20,14 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
+<script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -260,6 +265,69 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
 
 </head>
 
@@ -267,6 +335,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -326,30 +404,8 @@ $(document).ready(function () {
 - en compétition ou loisirs,<br />
 - pour les enfants, juniors, seniors…</p>
 <hr />
-<div id="tarifs" class="section level2">
-<h2><span style="color:darkBlue"> <strong>Tarifs</strong> </span></h2>
-<ul>
-<li>Juniors, Séniors , Vétérans (15 ans et +)
-<ul>
-<li>40 € la licence promotionnelle (entrainements)</li>
-<li>70 € la licence traditionnelle (compétitions)</li>
-</ul></li>
-<li>Minimes &amp; Cadets (11 à 14 ans)
-<ul>
-<li>35 € la licence promotionnelle</li>
-<li>50 € la licence traditionnelle</li>
-</ul></li>
-<li>Poussins &amp; Benjamins (8 à 10 ans)
-<ul>
-<li>35 € la licence promotionnelle</li>
-<li>40 € la licence traditionnelle</li>
-</ul></li>
-</ul>
-<p>La troisième licence prise dans la même famille sera à moitié prix !</p>
-<hr />
-</div>
-<div id="entrainements-rencontres" class="section level2">
-<h2><span style="color:darkBlue"> <strong>Entrainements &amp; rencontres</strong> </span></h2>
+<div id="entrainements-rencontres" class="section level1">
+<h1><span style="color:darkBlue"> <strong>Entrainements &amp; rencontres</strong> </span></h1>
 <ul>
 <li>Entrainements
 <ul>
@@ -374,8 +430,8 @@ $(document).ready(function () {
 </ul>
 <hr />
 </div>
-<div id="profil-de-nos-équipes" class="section level2">
-<h2><span style="color:darkBlue"> <strong>Profil de nos équipes</strong> </span></h2>
+<div id="profil-de-nos-équipes" class="section level1">
+<h1><span style="color:darkBlue"> <strong>Profil de nos équipes</strong> </span></h1>
 <p><img src="www/Actualites/stats.jpg" /></p>
 <p>Pour mesurer les performances des joueurs ET des équipes lors des différentes journées de championnat, on doit prendre différents paramètres en considération : - la force du joueur <strong>ET</strong> - la force d’une équipe.</p>
 <p>Lors de nos différentes publications, on fera référence aux points individuels (des joueurs) et aux points cumulés correspondant à la somme des points des 4 joueurs de l’équipe.</p>
@@ -401,9 +457,33 @@ Chaque week-end, on procède à un turn-over pour que tout le monde puisse jouer
 </ul>
 <hr />
 </div>
+<div id="tarifs" class="section level1">
+<h1><span style="color:darkBlue"> <strong>Tarifs</strong> </span></h1>
+<ul>
+<li>Juniors, Séniors , Vétérans (15 ans et +)
+<ul>
+<li>40 € la licence promotionnelle (entrainements)</li>
+<li>70 € la licence traditionnelle (compétitions)</li>
+</ul></li>
+<li>Minimes &amp; Cadets (11 à 14 ans)
+<ul>
+<li>35 € la licence promotionnelle</li>
+<li>50 € la licence traditionnelle</li>
+</ul></li>
+<li>Poussins &amp; Benjamins (8 à 10 ans)
+<ul>
+<li>35 € la licence promotionnelle</li>
+<li>40 € la licence traditionnelle</li>
+</ul></li>
+</ul>
+<p>La troisième licence prise dans la même famille sera à moitié prix !</p>
+<hr />
+</div>
 
 
 
+</div>
+</div>
 
 </div>
 
@@ -436,6 +516,32 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

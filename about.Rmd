@@ -1,6 +1,13 @@
 ---
 title: "A propos de nous"
+output:
+  html_document:
+    df_print: paged
+    toc: yes
+    toc_depth: 1
+    toc_float: yes
 ---
+
 <br>
 
 
