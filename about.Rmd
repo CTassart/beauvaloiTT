@@ -1,11 +1,28 @@
 ---
-title: "About Me"
+title: "A propos de nous"
+---
+<br>
+
+
+- __Nom du club :__ Beauvalois TT
+- __Lieu d'activité :__ "Gymnase Pierre Sueur"
+- __Hobbies:__ Club de tennis de table. 
+
 ---
 
-- __Name:__ Nick
-- __Ocupation:__ "Student"
-- __Hobbies:__ Learning software development instead of studying for exams. 
+# <span style="color:darkBlue"> **Notre page Facebook** </span>
 
-Here is a super cool photo of me doing one of my favorite things, yawning. 
+![https://www.facebook.com/beauvaltennisdetable](2_Actualites/logo Fb.png)
 
-![](logo.jpg)
+
+---
+
+# <span style="color:darkBlue"> **Notre logo** </span>
+
+![](www/logo.jpg)
+
+---
+
+# <span style="color:darkBlue"> **Notre dernière assemblée générale** </span>
+![](www/réunion ping.jpg)
+

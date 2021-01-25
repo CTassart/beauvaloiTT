@@ -1,0 +1,32 @@
+---
+  title: "Les documents"
+---
+<br>
+
+Cette page est un espace de partage de divers documents :
+- Documents annuels d'inscription - vierges
+   - demandes de licence
+   - attestations médicales
+- CR des assemblées générales,
+- Attestations de licence
+- autres
+
+---
+
+## <span style="color:darkred"> **Documents annuels d'inscription** </span>
+
+- [demandes de licence]()
+- [attestations médicales]()
+
+---
+
+## <span style="color:darkred"> **Attestations de licence** </span>
+
+- [Mesroua Jean-Louis](9_documents/licence_8014706 mesroua jean louis.pdf)
+- [Octor Guylain](9_documents/licence_8016084 octor guylain.pdf)
+
+---
+
+## <span style="color:darkred"> **Les comptes-rendus** </span>
+
+- [Procès Verbal Assemblée générale - Renouvellement bureau](9_documents/BeauvalTT - PV Renouvellement bureau.html)

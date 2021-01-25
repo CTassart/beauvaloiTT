@@ -1,0 +1,97 @@
+---
+  title: "Les joueurs"
+---
+<br>
+
+
+## <span style="color:darkGreen"> **Liste des joueurs** </span>
+
+```{r, echo = FALSE, fig.align='center',message=FALSE, warning=FALSE, include=FALSE, paged.print=FALSE}
+# Fonction pour formatter les tableaux
+library(DT)
+library(dplyr)
+formaterTableau<-function(tab){
+  datatable(tab, 
+            rownames = F, 
+            width="100%",
+            extensions = c('Buttons','ColReorder','FixedColumns')
+            ,options = list(
+              dom = 'Blfrtip',
+              buttons = c("colvis",'csv', 'excel', 'pdf'),
+              colReorder = TRUE,
+              lengthMenu = list(c(5, 25,50, -1), c('5', '25',"50", 'Tout')),
+              pageLength = 10
+            )
+   )
+}
+
+```
+
+```{r fig.align='center', message=FALSE, warning=FALSE, include=FALSE, paged.print=FALSE}
+# Fonction pour formater les tableaux
+library(DT)
+library(dplyr)
+formaterTableauSimple<-function(tab){
+  datatable(tab, 
+            rownames = F, 
+            width="100%",
+            extensions = c('Buttons','ColReorder','FixedColumns')
+            ,options = list(
+              dom = 'Blfrtip',
+              lengthMenu = list(c(5, 25,50, -1), c('5', '25',"50", 'Tout')),
+              pageLength = 10
+            )
+   )
+}
+
+```
+
+```{r listeJoueurs, echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, paged.print=FALSE}
+# Fonction pour formatter les tableaux
+library(DT)
+library(dplyr)
+
+listeJoueurs <- rio::import("1_joueurs/licencies 2020.txt") %>% 
+  select(1,5,4,3,6,9,11,19,22)
+names(listeJoueurs)[c(2,5:7,9)] <- c("Genre","Date naissance","Type de licence","Catégorie", "Pts (début saison)")
+listeJoueurs$Nom <- paste0(substr(listeJoueurs$Nom,1,1),".")
+listeJoueurs$Genre <- forcats::fct_recode(listeJoueurs$Genre,Masculin="M", Feminin="F")
+listeJoueurs$`Type de licence` <- forcats::fct_recode(listeJoueurs$`Type de licence`, `Tradi (compétition)`="T", `Promo (entrainement)`="P")
+listeJoueurs$`Catégorie` <- paste0("joueur·se de ",listeJoueurs$`Catégorie`, " ans")
+listeJoueurs$Clast <- paste0("Classé·e ",listeJoueurs$Clast)
+listeJoueurs %>% arrange(Prénom)
+
+listeJoueurs %>% formaterTableau()
+```
+
+## <span style="color:darkGreen"> **Répartition des joueurs** </span>
+
+### Par genre
+```{r, echo = FALSE, fig.align='center'}
+as.data.frame(listeJoueurs %>% count(Genre, sort = TRUE)) %>% rename(Nombre=n) %>%  formaterTableauSimple()
+
+```
+
+### Par catégorie
+
+```{r, echo = FALSE, fig.align='center'}
+library(forcats)
+
+as.data.frame(listeJoueurs %>% count(`Catégorie`, sort = TRUE)) %>% rename(Nombre=n) %>% formaterTableauSimple()
+
+
+
+```
+
+### Par Classement
+```{r, echo = FALSE, fig.align='center'}
+as.data.frame(listeJoueurs %>% count(Clast, sort = TRUE)) %>% rename(Nombre=n) %>%formaterTableauSimple()
+```
+
+### Par type de licence
+
+```{r, echo = FALSE, fig.align='center'}
+as.data.frame(listeJoueurs %>% count(`Type de licence`, sort = TRUE)) %>% rename(Nombre=n) %>%formaterTableauSimple()
+```
+
+

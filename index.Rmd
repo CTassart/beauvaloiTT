@@ -1,37 +1,37 @@
 ---
 title: "My Website"
 ---
-
-Hello, Website!
-
-For more information about simple R Markdown websites, please read the documentation at https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html.
-
-Please also note that simple R Markdown sites are _not_ based on **blogdown**. They are probably good for websites with only a few Rmd documents. For larger-scale and more sophisticated websites (such as blogs), you may want to use **blogdown** instead: https://github.com/rstudio/blogdown.
+<br>
 
 
-__Look at how cool this plot is!__
+**Beauvalois tennis de Table** est un club de pratique de Tennis de Table  
+- en compétition ou loisirs,  
+- pour les enfants, juniors, seniors...  
 
-$$Y = \alpha \cdot \sin(X), \alpha = 0,0.1,0.2,...,3$$
+---
 
+## <span style="color:darkBlue"> **Tarifs** </span>
 
-## Remove # before ticks to get this to work. 
-#```{r, echo = FALSE, fig.align='center'}
-library(tidyverse)
-cool_function <- function(x, alpha) return(sin(alpha*x))
-xs <- seq(0, pi*1.5, 0.005)
-ys <- cool_function(xs, 1)
-results <- data_frame(xs, ys, alpha = "1")
-for(alpha in seq(0,3, 0.1)){
-  results <- results %>% 
-    bind_rows(data_frame(
-      xs, 
-      ys = cool_function(xs, alpha),
-      alpha = as.character(alpha)
-    ))
-}
+- Juniors, Séniors , Vétérans (15 ans et +)
+  - 40 € la licence promotionnelle (entrainements)
+  - 70 € la licence traditionnelle (compétitions)
 
-ggplot(results, aes(x = xs, y = ys, color = alpha)) + 
-  geom_line() + 
-  theme_bw() + 
-  theme(legend.position="none")
-#```
+- Minimes & Cadets (11 à 14 ans)
+  - 35 € la licence promotionnelle
+  - 50 € la licence traditionnelle
+
+- Poussins & Benjamins (8 à 10 ans)
+  - 35 € la licence promotionnelle
+  - 40 € la licence traditionnelle
+
+La troisième licence prise dans la même famille sera à moitié prix !
+
+---
+
+## <span style="color:darkBlue"> **Entrainements & rencontres** </span>
+- Entrainement
+  - lundi
+  - mercredi
+- Rencontres
+  - Vendredi
+  - Dimanche

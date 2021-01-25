@@ -3,11 +3,18 @@ output_dir: "."
 navbar:
   title: "Beauvalois Tennis de Table"
   left:
-    - text: "Home"
+    - text: "Présentation"
       href: index.html
-    - text: "Projects"     ##### the new
-      href: projects.html  ##### stuff
-    - text: "About Me"
+    - text: "Actualités"
+      href: actualites.html
+    - text: "Joueurs"     ##### the new
+      href: joueurs.html  ##### stuff
+    - text: "Statistiques"     ##### the new
+      href: statistiques.html  ##### stuff
+    - text: "Documents"     ##### the new
+      href: documents.html  ##### stuff
+
+    - text: "A propos de nous"
       href: about.html
 output:
   html_document:
