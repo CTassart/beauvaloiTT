@@ -5,22 +5,16 @@ navbar:
   left:
     - text: "Présentation"
       href: index.html
-      
     - text: "Actualités"
       href: actualites.html
-      
     - text: "Les rencontres"
       href: rencontres.html
-      
     - text: "Joueurs"
       href: joueurs.html
-      
     - text: "Statistiques"
       href: statistiques.html
-      
     - text: "Documents"
       href: Documents.html
-
     - text: "A propos de nous"
       href: about.html
 output:
