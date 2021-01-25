@@ -50,7 +50,7 @@ billboarder() %>%
   bb_legend(position = "right") %>% 
   bb_zoom(
     enabled = list(type = "drag"),
-    resetButton = list(text = "Unzoom")
+    resetButton = list(text = "Annuler le Zoom")
   ) %>% 
   bb_labs(title = "Evolution annuelle des joueurs",
           y = "Points",
