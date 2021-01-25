@@ -1,5 +1,5 @@
 ---
-title: "Les actualités"
+title: "Les rencontres"
 ---
 <br>
 
