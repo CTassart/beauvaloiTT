@@ -34,6 +34,10 @@ Cette page est un espace de partage de divers documents :
 
 ---
 
-# <span style="color:darkred"> **Les comptes-rendus** </span>
+# <span style="color:darkred"> **PV & comptes-rendus divers** </span>
 
-- [Procès Verbal Assemblée générale - Renouvellement bureau](9_documents/BeauvalTT - PV Renouvellement bureau.html)
+## 2021  
+
+- [CR Assemblée Générale](https://hackmd.io/@cedTas-Perso/SJVD-QcHP)
+- [Procès Verbal Renouvellement bureau](9_documents/BeauvalTT - PV Renouvellement bureau.html)
+
