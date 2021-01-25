@@ -39,7 +39,9 @@ La troisième licence prise dans la même famille sera à moitié prix !
   - Vendredi, pour les équipes 2 et 3,
   - Dimanche, pour l'équipe 1
 
-## <span style="color:darkBlue"> **Tchote analyse statistique de nos équipes** </span>
+---
+
+## <span style="color:darkBlue"> **Profil de nos équipes** </span>
 
 ![](www/Actualites/stats.jpg)
 
