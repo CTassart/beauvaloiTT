@@ -8,7 +8,9 @@ output:
     toc_float: yes
 ---
 
-## **Liste des joueurs**
+<br>
+
+# **Liste des joueurs**
 
 ```{r, formaterTableau, echo = FALSE, fig.align='center',message=FALSE, warning=FALSE, include=FALSE, paged.print=FALSE}
 # Fonction pour formatter les tableaux
@@ -66,15 +68,15 @@ formaterTableau(listeJoueurs)
 
 ---
 
-## **Répartition des joueurs**
+# **Répartition des joueurs**
 
-### - Par genre
+## - Par genre
 ```{r, parGenre, echo = FALSE, fig.align='center'}
 as.data.frame(listeJoueurs %>% count(Genre, sort = TRUE)) %>% rename(Nombre=n) %>%  formaterTableauSimple()
 
 ```
 
-### - Par catégorie
+## - Par catégorie
 
 ```{r, parCategorie, echo = FALSE, fig.align='center'}
 library(forcats)
@@ -83,18 +85,18 @@ as.data.frame(listeJoueurs %>% count(`Catégorie`, sort = TRUE)) %>% rename(Nomb
 
 ```
 
-### - Par Classement
+## - Par Classement
 ```{r, parClassement, echo = FALSE, fig.align='center'}
 as.data.frame(listeJoueurs %>% count(Classement, sort = TRUE)) %>% rename(Nombre=n) %>%formaterTableauSimple()
 ```
 
-### - Par type de licence
+## - Par type de licence
 
 ```{r,parTypeLicence, echo = FALSE, fig.align='center'}
 as.data.frame(listeJoueurs %>% count(`Type de licence`, sort = TRUE)) %>% rename(Nombre=n) %>%formaterTableauSimple()
 ```
 
-## **Statistiques**
+# **Statistiques**
 
 ```{r, echo = FALSE, fig.align='center'}
 library(tidyverse)
@@ -119,7 +121,7 @@ ggplot(results, aes(x = xs, y = ys, color = alpha)) +
 
 ---
 
-### **Evolution des joueurs**, depuis 2005
+## **Evolution des joueurs**, depuis 2005
 
 <span style="background-color:orange"> ** ------------------------------- PARTIE EN COURS DE DEVELOPPEMENT ------------------------------- ** </span>
 

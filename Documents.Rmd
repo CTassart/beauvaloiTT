@@ -20,24 +20,44 @@ Cette page est un espace de partage de divers documents :
 
 ---
 
-## **Documents annuels d'inscription**
+# ***Faire sa demande de licence***
 
-- [demandes de licence]()
-- [attestations médicales]()
+- [demandes de licence](9_documents/2020_2021 LICENCE.pdf)
+- [Modèle de certificat médical](9_documents/certificat-pour-pratique-tennis-de-table-2017-2018-1845.pdf)
+- [Auto-questionnaire de santé](9_documents/auto-questionnaire-de-sante-2017-2018-1846.pdf)
+
+Vous ne savez pas si vous devez présenter un **certificat médical** ou un **auto-questionnaire de santé** ? Essayez de suivre de schéma : si vous comprenez quelque-chose... bah, félicitations !
+Sinon, posez la question à un type (ou une fille) du club
+
+![](9_documents/schema certif med.jpg)
+(schéma récupéré sur le site de la **FFTT**)
+
+[Complément d'informations](http://www.fftt.com/site/actualites/2017-06-21/licence-et-certification-medicale)
+
 
 ---
 
-## ***Attestations de licence***
+# ***Télécharger son attestation de licence***
 
-- [Mesroua Jean-Louis](9_documents/licence_8014706 mesroua jean louis.pdf)
-- [Octor Guylain](9_documents/licence_8016084 octor guylain.pdf)
+<details>
+<summary markdown="span">**Cliquez sur la flèche pour sélectionner et télécharger votre attestation de licence**</summary>
+
+- **Saison 2020-2021**
+  - [Mesroua Jean-Louis](9_documents/licences 2021/licence_8014706 mesroua jean louis.pdf)
+  - [Octor Guylain](9_documents/licences 2021/licence_8016084 octor guylain.pdf)
+
+</details>
 
 ---
 
-## ***PV & comptes-rendus divers***
+# ***PV & comptes-rendus divers***
 
-### 2021  
+## 2021  
+
+<details>
+<summary markdown="span">**Cliquez sur la flèche pour accéder aux différents documents**</summary>
 
 - [CR Assemblée Générale](https://hackmd.io/@cedTas-Perso/SJVD-QcHP)
 - [Procès Verbal Renouvellement bureau](9_documents/BeauvalTT - PV Renouvellement bureau.html)
 
+</details>

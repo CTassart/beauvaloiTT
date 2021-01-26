@@ -5,9 +5,14 @@ img {
 }
 
 
-h1{
+.title{
     font-size:36px;  
     text-align:center;
-    background-color: steelBlue;
+    background-color: red;
     color: white;
-    }
+    font-family: "Georgia", Times, "Times New Roman", serif;
+    font-weight: bold;
+}
+
+
+        

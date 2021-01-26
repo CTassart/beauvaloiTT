@@ -12,24 +12,24 @@ output:
 
 ![](www/Actualites/logo.jpg)
 
-Le **Beauvalois tennis de Table** est un club de pratique de Tennis de Table  
+Le 🏓 **Beauvalois tennis de Table** 🏓 est un club de pratique de Tennis de Table  
 - en compétition ou loisirs,  
 - pour les enfants, juniors, seniors...  
 
 ---
 
-## **Pour plus d'informations et nous contacter**
+# **Pour plus d'informations et nous contacter**
 
 <br>
 
 - [**Notre page Facebook**](https://www.facebook.com/beauvaltennisdetable)
-- Par mail : [beauvaloistt@neuf.fr](beauvaloistt@neuf.fr)(eh oui, c'est encore sur le @Neuf)
+- Par mail : <beauvaloistt@neuf.fr>... euuuuh oui, on a bien dit @Neuf 
 - Le gymnase, aux dates et horaires d'entraînements
 - Les signaux de fumée mais on n'est pas certain de répondre rapidement 😏.
 
 ---
 
-## **Composition du bureau**
+# **Composition du bureau**
 
 <br>
 
@@ -41,6 +41,6 @@ Lors de la 1ère assemblée générale de l'année, nous avons procédé au reno
 
 ![](www/Actualites/reunion ping.jpg)
 
-Ces membres ont été élus selon leur classement au **Beer-Pong** ! 
+Ces membres ont été élus selon leur classement au **Beer-Pong**... évidemment ! 
 
 <span style="background-color:steelBlue"> **Sympa les copains !** </span>
