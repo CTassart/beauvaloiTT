@@ -8,13 +8,9 @@ output:
     toc_float: yes
 ---
 
-<br>
+## **Actualités 2021**
 
----
-
-# Actualités 2021
-
-## <span style="color:steelBlue"> **re-re-suspension d'entrainement des jeunes** </span>
+### ***re-re-suspension d'entrainement des jeunes***
 
 jeudi 14 janvier, le gouvernement a décidé la suspension des activités sportives en intérieur dans le cadre scolaire et extrascolaire et ce "jusqu'à nouvel ordre".
 Par conséquent, les entrainements des jeunes sont, de nouveau, suspendus.  
@@ -29,15 +25,14 @@ Il ne nous reste plus qu'à jouer solo et fabriquer chacun son "return board" po
 
 ---
 
-## <span style="color:steelBlue"> **Meilleurs voeux 2021** </span>
+### ***Meilleurs voeux 2021***
 
 Les joueurs, joueuses et membres du Beauvalois TT vous présentent tous leurs vœux de bonheurs, réussites et santé pour cette nouvelle année.  
 En espérant que 2021 nous permettent de nous retrouver et de taper la balle ensemble.  
 
 🏓 **Beauvalois TT** 🏓
 
----
 
-# Actualités 2020
+## **Actualités 2020**
 
 

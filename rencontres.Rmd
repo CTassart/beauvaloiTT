@@ -12,9 +12,9 @@ output:
 
 ---
 
-# Rencontres 2021 - Phase 1
+## **2021 - Phase 1**
 
-## <span style="color:steelBlue"> **Phase 1 - Journée 3** </span>
+### ***Phase 1 - Journée 3***
 
 Ce week-end, le **Beauval Tennis de Table** a enregistré **2 victoires** et **1 défaite**.
 
@@ -27,21 +27,6 @@ Dimanche, **l’équipe 1** n’était pas favorite face à Rue : déficit de �
 
 ![](www/rencontres/rencontre Phase 1 J3.jpg)
 
-
 ---
-
-# Rencontres 2020 - Phase 2
-A compléter
-
-# Rencontres 2020 - Phase 1
-A compléter
-
----
-
-# Rencontres 2019 - Phase 2
-A compléter
-
-# Rencontres 2019 - Phase 1
-A compléter
 
 

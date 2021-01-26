@@ -362,7 +362,10 @@ div.tocify {
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="index.html">Présentation</a>
+  <a href="index.html">Hello !</a>
+</li>
+<li>
+  <a href="about.html">A propos de nous</a>
 </li>
 <li>
   <a href="actualites.html">Actualités</a>
@@ -374,16 +377,10 @@ div.tocify {
   <a href="joueurs.html">Joueurs</a>
 </li>
 <li>
-  <a href="statistiques.html">Statistiques</a>
-</li>
-<li>
   <a href="Documents.html">Documents</a>
 </li>
 <li>
   <a href="liens.html">Liens utiles</a>
-</li>
-<li>
-  <a href="about.html">A propos de nous</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -405,26 +402,26 @@ div.tocify {
 <p><br></p>
 <p>Cette page est un espace de partage de divers documents : - Documents annuels d’inscription - vierges - demandes de licence - attestations médicales - CR des assemblées générales, - Attestations de licence - autres</p>
 <hr />
-<div id="documents-annuels-dinscription" class="section level1">
-<h1><span style="color:darkred"> <strong>Documents annuels d’inscription</strong> </span></h1>
+<div id="documents-annuels-dinscription" class="section level2">
+<h2><strong>Documents annuels d’inscription</strong></h2>
 <ul>
 <li><a href="">demandes de licence</a></li>
 <li><a href="">attestations médicales</a></li>
 </ul>
 <hr />
 </div>
-<div id="attestations-de-licence" class="section level1">
-<h1><span style="color:darkred"> <strong>Attestations de licence</strong> </span></h1>
+<div id="attestations-de-licence" class="section level2">
+<h2><strong><em>Attestations de licence</em></strong></h2>
 <ul>
 <li><a href="9_documents/licence_8014706%20mesroua%20jean%20louis.pdf">Mesroua Jean-Louis</a></li>
 <li><a href="9_documents/licence_8016084%20octor%20guylain.pdf">Octor Guylain</a></li>
 </ul>
 <hr />
 </div>
-<div id="pv-comptes-rendus-divers" class="section level1">
-<h1><span style="color:darkred"> <strong>PV &amp; comptes-rendus divers</strong> </span></h1>
-<div id="section" class="section level2">
-<h2>2021</h2>
+<div id="pv-comptes-rendus-divers" class="section level2">
+<h2><strong><em>PV &amp; comptes-rendus divers</em></strong></h2>
+<div id="section" class="section level3">
+<h3>2021</h3>
 <ul>
 <li><a href="https://hackmd.io/@cedTas-Perso/SJVD-QcHP">CR Assemblée Générale</a></li>
 <li><a href="9_documents/BeauvalTT%20-%20PV%20Renouvellement%20bureau.html">Procès Verbal Renouvellement bureau</a></li>
@@ -478,7 +475,7 @@ $(document).ready(function ()  {
 
     // establish options
     var options = {
-      selectors: "h1,h2",
+      selectors: "h1,h2,h3",
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {

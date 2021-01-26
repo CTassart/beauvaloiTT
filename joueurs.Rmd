@@ -4,16 +4,13 @@ output:
   html_document:
     df_print: paged
     toc: yes
-    toc_depth: 2
+    toc_depth: 3
     toc_float: yes
 ---
 
-<br>
+## **Liste des joueurs**
 
-
-# <span style="color:darkGreen"> **Liste des joueurs** </span> 
-
-```{r, echo = FALSE, fig.align='center',message=FALSE, warning=FALSE, include=FALSE, paged.print=FALSE}
+```{r, formaterTableau, echo = FALSE, fig.align='center',message=FALSE, warning=FALSE, include=FALSE, paged.print=FALSE}
 # Fonction pour formatter les tableaux
 library(DT)
 library(dplyr)
@@ -32,12 +29,6 @@ formaterTableau<-function(tab){
    )
 }
 
-```
-
-```{r fig.align='center', message=FALSE, warning=FALSE, include=FALSE, paged.print=FALSE}
-# Fonction pour formater les tableaux
-library(DT)
-library(dplyr)
 formaterTableauSimple<-function(tab){
   datatable(tab, 
             rownames = F, 
@@ -50,8 +41,9 @@ formaterTableauSimple<-function(tab){
             )
    )
 }
-
 ```
+
+
 
 ```{r listeJoueurs, echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, paged.print=FALSE}
 # Fonction pour formatter les tableaux
@@ -59,46 +51,102 @@ library(DT)
 library(dplyr)
 
 listeJoueurs <- rio::import("1_joueurs/licencies 2020.txt") %>% 
-  select(1,5,4,3,6,9,11,19,22)
-names(listeJoueurs)[c(2,5:7,9)] <- c("Genre","Date naissance","Type de licence","Catégorie", "Pts (début saison)")
-listeJoueurs$Nom <- paste0(substr(listeJoueurs$Nom,1,1),".")
-listeJoueurs$Genre <- forcats::fct_recode(listeJoueurs$Genre,Masculin="M", Feminin="F")
-listeJoueurs$`Type de licence` <- forcats::fct_recode(listeJoueurs$`Type de licence`, `Tradi (compétition)`="T", `Promo (entrainement)`="P")
-listeJoueurs$`Catégorie` <- paste0("joueur·se de ",listeJoueurs$`Catégorie`, " ans")
-listeJoueurs$Clast <- paste0("Classé·e ",listeJoueurs$Clast)
-listeJoueurs %>% arrange(Prénom)
+  mutate(Nom=paste0(substr(Nom,1,1),"."),
+         Genre=forcats::fct_recode(Sexe,Masculin="M", Feminin="F"),
+         `Type de licence`=forcats::fct_recode(Type, `Tradi (compétition)`="T", `Promo (entrainement)`="P"),
+         `Catégorie`= paste0(`Categ Sp.`, " ans"),
+         `Classement`=paste0("Classé·e ",Clast),
+         `Date de naissance`=Naissance,
+         `Pts (début saison)`=Points) %>% 
+  select("N° Licence","Genre","Prénom","Nom","Date de naissance","Type de licence","Catégorie","Classement","Pts (début saison)") %>% 
+  arrange(desc(`Type de licence`),`Prénom`) 
 
-listeJoueurs %>% formaterTableau()
+formaterTableau(listeJoueurs)
 ```
 
-# <span style="color:darkGreen"> **Répartition des joueurs** </span>
+---
 
-## Par genre
-```{r, echo = FALSE, fig.align='center'}
+## **Répartition des joueurs**
+
+### - Par genre
+```{r, parGenre, echo = FALSE, fig.align='center'}
 as.data.frame(listeJoueurs %>% count(Genre, sort = TRUE)) %>% rename(Nombre=n) %>%  formaterTableauSimple()
 
 ```
 
-## Par catégorie
+### - Par catégorie
 
-```{r, echo = FALSE, fig.align='center'}
+```{r, parCategorie, echo = FALSE, fig.align='center'}
 library(forcats)
 
 as.data.frame(listeJoueurs %>% count(`Catégorie`, sort = TRUE)) %>% rename(Nombre=n) %>% formaterTableauSimple()
 
-
-
 ```
 
-## Par Classement
-```{r, echo = FALSE, fig.align='center'}
-as.data.frame(listeJoueurs %>% count(Clast, sort = TRUE)) %>% rename(Nombre=n) %>%formaterTableauSimple()
+### - Par Classement
+```{r, parClassement, echo = FALSE, fig.align='center'}
+as.data.frame(listeJoueurs %>% count(Classement, sort = TRUE)) %>% rename(Nombre=n) %>%formaterTableauSimple()
 ```
 
-## Par type de licence
+### - Par type de licence
 
-```{r, echo = FALSE, fig.align='center'}
+```{r,parTypeLicence, echo = FALSE, fig.align='center'}
 as.data.frame(listeJoueurs %>% count(`Type de licence`, sort = TRUE)) %>% rename(Nombre=n) %>%formaterTableauSimple()
 ```
+
+## **Statistiques**
+
+```{r, echo = FALSE, fig.align='center'}
+library(tidyverse)
+cool_function <- function(x, alpha) return(sin(alpha*x))
+xs <- seq(0, pi*1.5, 0.005)
+ys <- cool_function(xs, 1)
+results <- data_frame(xs, ys, alpha = "1")
+for(alpha in seq(0,3, 0.1)){
+  results <- results %>% 
+    bind_rows(data_frame(
+      xs, 
+      ys = cool_function(xs, alpha),
+      alpha = as.character(alpha)
+    ))
+}
+
+ggplot(results, aes(x = xs, y = ys, color = alpha)) + 
+  geom_line() + 
+  theme_bw() + 
+  theme(legend.position="none")
+```
+
+---
+
+### **Evolution des joueurs**, depuis 2005
+
+<span style="background-color:orange"> ** ------------------------------- PARTIE EN COURS DE DEVELOPPEMENT ------------------------------- ** </span>
+
+
+```{r, echo = FALSE, fig.align='center'}
+library(billboarder)
+evolutionJoueurs <- read.csv2("1_joueurs/evolutionJoueurs.csv")
+billboarder() %>% 
+  bb_linechart(
+    data = evolutionJoueurs, 
+    type = "spline"
+  ) %>% 
+  bb_x_axis(tick = list(format = "%Y-%m", fit = FALSE)) %>% 
+  bb_x_grid(show = TRUE) %>% 
+  bb_y_grid(show = TRUE) %>% 
+  bb_colors_manual("consommation" = "firebrick", "production" = "forestgreen") %>% 
+  bb_legend(position = "right") %>% 
+  bb_zoom(
+    enabled = list(type = "drag"),
+    resetButton = list(text = "Annuler le Zoom")
+  ) %>% 
+  bb_labs(title = "Evolution annuelle des joueurs",
+          y = "Points",
+          caption = "Données FFTT")
+
+```
+
+<span style="background-color:orange"> ** ------------------------------- PARTIE EN COURS DE DEVELOPPEMENT ------------------------------- ** </span>
 
 

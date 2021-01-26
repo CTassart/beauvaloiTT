@@ -49,6 +49,11 @@
 <script src="site_libs/dt-ext-fixedcolumns-1.10.20/js/dataTables.fixedColumns.min.js"></script>
 <link href="site_libs/crosstalk-1.1.0.1/css/crosstalk.css" rel="stylesheet" />
 <script src="site_libs/crosstalk-1.1.0.1/js/crosstalk.min.js"></script>
+<script src="site_libs/d3-format-1.4.2/d3-format.min.js"></script>
+<script src="site_libs/billboarder-binding-0.2.8/billboarder.js"></script>
+<link href="site_libs/billboard-1.11.1/billboard/billboard.min.css" rel="stylesheet" />
+<link href="site_libs/billboard-1.11.1/billboarder.css" rel="stylesheet" />
+<script src="site_libs/billboard-1.11.1/billboard/billboard.pkgd.min.js"></script>
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -383,7 +388,10 @@ div.tocify {
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="index.html">Présentation</a>
+  <a href="index.html">Hello !</a>
+</li>
+<li>
+  <a href="about.html">A propos de nous</a>
 </li>
 <li>
   <a href="actualites.html">Actualités</a>
@@ -395,16 +403,10 @@ div.tocify {
   <a href="joueurs.html">Joueurs</a>
 </li>
 <li>
-  <a href="statistiques.html">Statistiques</a>
-</li>
-<li>
   <a href="Documents.html">Documents</a>
 </li>
 <li>
   <a href="liens.html">Liens utiles</a>
-</li>
-<li>
-  <a href="about.html">A propos de nous</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -423,56 +425,48 @@ div.tocify {
 </div>
 
 
-<p><br></p>
-<div id="liste-des-joueurs" class="section level1">
-<h1><span style="color:darkGreen"> <strong>Liste des joueurs</strong> </span></h1>
-<pre><code>##    N° Licence    Genre     Prénom Nom Date naissance      Type de licence            Catégorie       Clast Pts (début saison)
-## 1     8020470 Masculin     Adrien  K.     29/04/2013 Promo (entrainement) joueur·se de -11 ans  Classé·e 5                500
-## 2      807168 Masculin     Arnaud  C.     26/01/1966  Tradi (compétition) joueur·se de -60 ans  Classé·e 9                983
-## 3     8013954 Masculin   Benjamin  H.     02/10/1994  Tradi (compétition) joueur·se de -40 ans  Classé·e 8                811
-## 4     8019673 Masculin     Benoît  L.     13/09/1981  Tradi (compétition) joueur·se de -40 ans  Classé·e 5                500
-## 5     8019018  Feminin   Blandine  G.     01/11/1972  Tradi (compétition) joueur·se de -50 ans  Classé·e 5                500
-## 6     8018660 Masculin       Carl  M.     08/08/2001  Tradi (compétition) joueur·se de -20 ans  Classé·e 5                500
-## 7     8016237 Masculin     Cedric  T.     21/03/1976  Tradi (compétition) joueur·se de -50 ans  Classé·e 7                735
-## 8     8014017 Masculin Christophe  P.     16/11/1970  Tradi (compétition) joueur·se de -60 ans  Classé·e 9                974
-## 9     8018770 Masculin       Eric  B.     30/09/1964  Tradi (compétition) joueur·se de -60 ans  Classé·e 5                578
-## 10    8015854 Masculin       Eric  O.     21/03/1978  Tradi (compétition) joueur·se de -50 ans  Classé·e 8                889
-## 11    8020382 Masculin      Ethan  T.     10/12/2005  Tradi (compétition) joueur·se de -16 ans  Classé·e 5                500
-## 12    8015865 Masculin    Fabrice  V.     22/08/1974  Tradi (compétition) joueur·se de -50 ans  Classé·e 9                910
-## 13    8014073 Masculin   Geoffrey  M.     08/11/1977  Tradi (compétition) joueur·se de -50 ans  Classé·e 9                929
-## 14    8016084 Masculin    Guylain  O.     10/08/1956 Promo (entrainement) joueur·se de -70 ans  Classé·e 5                500
-## 15    8017508 Masculin       Hugo  F.     27/06/2001  Tradi (compétition) joueur·se de -20 ans  Classé·e 5                519
-## 16    8014706 Masculin Jean-louis  M.     07/01/1959  Tradi (compétition) joueur·se de -70 ans  Classé·e 5                500
-## 17    8020469  Feminin     Maelys  D.     03/11/2011 Promo (entrainement) joueur·se de -11 ans  Classé·e 5                500
-## 18    8019722 Masculin     Mathys  D.     08/01/2011 Promo (entrainement) joueur·se de -11 ans  Classé·e 5                500
-## 19    8017042 Masculin     Pascal  H.     04/05/1969  Tradi (compétition) joueur·se de -60 ans  Classé·e 6                626
-## 20    8020277  Feminin    Pauline  D.     18/12/2012 Promo (entrainement) joueur·se de -11 ans  Classé·e 5                500
-## 21    8019667 Masculin   Rodrigue  L.     28/06/1978  Tradi (compétition) joueur·se de -50 ans  Classé·e 5                500
-## 22    8010606 Masculin     Thomas  C.     02/09/1991  Tradi (compétition) joueur·se de -40 ans Classé·e 11               1117</code></pre>
-<div id="htmlwidget-4e3cc053d5ef41a00a0a" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-4e3cc053d5ef41a00a0a">{"x":{"filter":"none","extensions":["Buttons","ColReorder","FixedColumns"],"data":[[8018770,807168,8010606,8020469,8019722,8020277,8017508,8019018,8013954,8017042,8020470,8019673,8019667,8018660,8014073,8014706,8015854,8016084,8014017,8016237,8020382,8015865],["Masculin","Masculin","Masculin","Feminin","Masculin","Feminin","Masculin","Feminin","Masculin","Masculin","Masculin","Masculin","Masculin","Masculin","Masculin","Masculin","Masculin","Masculin","Masculin","Masculin","Masculin","Masculin"],["Eric","Arnaud","Thomas","Maelys","Mathys","Pauline","Hugo","Blandine","Benjamin","Pascal","Adrien","Benoît","Rodrigue","Carl","Geoffrey","Jean-louis","Eric","Guylain","Christophe","Cedric","Ethan","Fabrice"],["B.","C.","C.","D.","D.","D.","F.","G.","H.","H.","K.","L.","L.","M.","M.","M.","O.","O.","P.","T.","T.","V."],["30/09/1964","26/01/1966","02/09/1991","03/11/2011","08/01/2011","18/12/2012","27/06/2001","01/11/1972","02/10/1994","04/05/1969","29/04/2013","13/09/1981","28/06/1978","08/08/2001","08/11/1977","07/01/1959","21/03/1978","10/08/1956","16/11/1970","21/03/1976","10/12/2005","22/08/1974"],["Tradi (compétition)","Tradi (compétition)","Tradi (compétition)","Promo (entrainement)","Promo (entrainement)","Promo (entrainement)","Tradi (compétition)","Tradi (compétition)","Tradi (compétition)","Tradi (compétition)","Promo (entrainement)","Tradi (compétition)","Tradi (compétition)","Tradi (compétition)","Tradi (compétition)","Tradi (compétition)","Tradi (compétition)","Promo (entrainement)","Tradi (compétition)","Tradi (compétition)","Tradi (compétition)","Tradi (compétition)"],["joueur·se de -60 ans","joueur·se de -60 ans","joueur·se de -40 ans","joueur·se de -11 ans","joueur·se de -11 ans","joueur·se de -11 ans","joueur·se de -20 ans","joueur·se de -50 ans","joueur·se de -40 ans","joueur·se de -60 ans","joueur·se de -11 ans","joueur·se de -40 ans","joueur·se de -50 ans","joueur·se de -20 ans","joueur·se de -50 ans","joueur·se de -70 ans","joueur·se de -50 ans","joueur·se de -70 ans","joueur·se de -60 ans","joueur·se de -50 ans","joueur·se de -16 ans","joueur·se de -50 ans"],["Classé·e 5","Classé·e 9","Classé·e 11","Classé·e 5","Classé·e 5","Classé·e 5","Classé·e 5","Classé·e 5","Classé·e 8","Classé·e 6","Classé·e 5","Classé·e 5","Classé·e 5","Classé·e 5","Classé·e 9","Classé·e 5","Classé·e 8","Classé·e 5","Classé·e 9","Classé·e 7","Classé·e 5","Classé·e 9"],[578,983,1117,500,500,500,519,500,811,626,500,500,500,500,929,500,889,500,974,735,500,910]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>N° Licence<\/th>\n      <th>Genre<\/th>\n      <th>Prénom<\/th>\n      <th>Nom<\/th>\n      <th>Date naissance<\/th>\n      <th>Type de licence<\/th>\n      <th>Catégorie<\/th>\n      <th>Clast<\/th>\n      <th>Pts (début saison)<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Blfrtip","buttons":["colvis","csv","excel","pdf"],"colReorder":true,"lengthMenu":[[5,25,50,-1],["5","25","50","Tout"]],"pageLength":10,"columnDefs":[{"className":"dt-right","targets":[0,8]}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div id="liste-des-joueurs" class="section level2">
+<h2><strong>Liste des joueurs</strong></h2>
+<div id="htmlwidget-d431cdb8c90cac74ec17" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-d431cdb8c90cac74ec17">{"x":{"filter":"none","extensions":["Buttons","ColReorder","FixedColumns"],"data":[[807168,8013954,8019673,8019018,8018660,8016237,8014017,8018770,8015854,8020382,8015865,8014073,8017508,8014706,8017042,8019667,8010606,8020470,8016084,8020469,8019722,8020277],["Masculin","Masculin","Masculin","Feminin","Masculin","Masculin","Masculin","Masculin","Masculin","Masculin","Masculin","Masculin","Masculin","Masculin","Masculin","Masculin","Masculin","Masculin","Masculin","Feminin","Masculin","Feminin"],["Arnaud","Benjamin","Benoît","Blandine","Carl","Cedric","Christophe","Eric","Eric","Ethan","Fabrice","Geoffrey","Hugo","Jean-louis","Pascal","Rodrigue","Thomas","Adrien","Guylain","Maelys","Mathys","Pauline"],["C.","H.","L.","G.","M.","T.","P.","B.","O.","T.","V.","M.","F.","M.","H.","L.","C.","K.","O.","D.","D.","D."],["26/01/1966","02/10/1994","13/09/1981","01/11/1972","08/08/2001","21/03/1976","16/11/1970","30/09/1964","21/03/1978","10/12/2005","22/08/1974","08/11/1977","27/06/2001","07/01/1959","04/05/1969","28/06/1978","02/09/1991","29/04/2013","10/08/1956","03/11/2011","08/01/2011","18/12/2012"],["Tradi (compétition)","Tradi (compétition)","Tradi (compétition)","Tradi (compétition)","Tradi (compétition)","Tradi (compétition)","Tradi (compétition)","Tradi (compétition)","Tradi (compétition)","Tradi (compétition)","Tradi (compétition)","Tradi (compétition)","Tradi (compétition)","Tradi (compétition)","Tradi (compétition)","Tradi (compétition)","Tradi (compétition)","Promo (entrainement)","Promo (entrainement)","Promo (entrainement)","Promo (entrainement)","Promo (entrainement)"],["-60 ans","-40 ans","-40 ans","-50 ans","-20 ans","-50 ans","-60 ans","-60 ans","-50 ans","-16 ans","-50 ans","-50 ans","-20 ans","-70 ans","-60 ans","-50 ans","-40 ans","-11 ans","-70 ans","-11 ans","-11 ans","-11 ans"],["Classé·e 9","Classé·e 8","Classé·e 5","Classé·e 5","Classé·e 5","Classé·e 7","Classé·e 9","Classé·e 5","Classé·e 8","Classé·e 5","Classé·e 9","Classé·e 9","Classé·e 5","Classé·e 5","Classé·e 6","Classé·e 5","Classé·e 11","Classé·e 5","Classé·e 5","Classé·e 5","Classé·e 5","Classé·e 5"],[983,811,500,500,500,735,974,578,889,500,910,929,519,500,626,500,1117,500,500,500,500,500]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>N° Licence<\/th>\n      <th>Genre<\/th>\n      <th>Prénom<\/th>\n      <th>Nom<\/th>\n      <th>Date de naissance<\/th>\n      <th>Type de licence<\/th>\n      <th>Catégorie<\/th>\n      <th>Classement<\/th>\n      <th>Pts (début saison)<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Blfrtip","buttons":["colvis","csv","excel","pdf"],"colReorder":true,"lengthMenu":[[5,25,50,-1],["5","25","50","Tout"]],"pageLength":10,"columnDefs":[{"className":"dt-right","targets":[0,8]}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<hr />
 </div>
-<div id="répartition-des-joueurs" class="section level1">
-<h1><span style="color:darkGreen"> <strong>Répartition des joueurs</strong> </span></h1>
-<div id="par-genre" class="section level2">
-<h2>Par genre</h2>
-<div id="htmlwidget-dea04590744c2f80b89b" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-dea04590744c2f80b89b">{"x":{"filter":"none","extensions":["Buttons","ColReorder","FixedColumns"],"data":[["Masculin","Feminin"],[19,3]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Genre<\/th>\n      <th>Nombre<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Blfrtip","lengthMenu":[[5,25,50,-1],["5","25","50","Tout"]],"pageLength":10,"columnDefs":[{"className":"dt-right","targets":1}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div id="répartition-des-joueurs" class="section level2">
+<h2><strong>Répartition des joueurs</strong></h2>
+<div id="par-genre" class="section level3">
+<h3>- Par genre</h3>
+<div id="htmlwidget-228b2de143e4c1b393b6" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-228b2de143e4c1b393b6">{"x":{"filter":"none","extensions":["Buttons","ColReorder","FixedColumns"],"data":[["Masculin","Feminin"],[19,3]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Genre<\/th>\n      <th>Nombre<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Blfrtip","lengthMenu":[[5,25,50,-1],["5","25","50","Tout"]],"pageLength":10,"columnDefs":[{"className":"dt-right","targets":1}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
-<div id="par-catégorie" class="section level2">
-<h2>Par catégorie</h2>
-<div id="htmlwidget-2b9f582b350fa3e68bcf" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-2b9f582b350fa3e68bcf">{"x":{"filter":"none","extensions":["Buttons","ColReorder","FixedColumns"],"data":[["joueur·se de -50 ans","joueur·se de -11 ans","joueur·se de -60 ans","joueur·se de -40 ans","joueur·se de -20 ans","joueur·se de -70 ans","joueur·se de -16 ans"],[6,4,4,3,2,2,1]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Catégorie<\/th>\n      <th>Nombre<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Blfrtip","lengthMenu":[[5,25,50,-1],["5","25","50","Tout"]],"pageLength":10,"columnDefs":[{"className":"dt-right","targets":1}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div id="par-catégorie" class="section level3">
+<h3>- Par catégorie</h3>
+<div id="htmlwidget-b293af45973908ff4dc3" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-b293af45973908ff4dc3">{"x":{"filter":"none","extensions":["Buttons","ColReorder","FixedColumns"],"data":[["-50 ans","-11 ans","-60 ans","-40 ans","-20 ans","-70 ans","-16 ans"],[6,4,4,3,2,2,1]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Catégorie<\/th>\n      <th>Nombre<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Blfrtip","lengthMenu":[[5,25,50,-1],["5","25","50","Tout"]],"pageLength":10,"columnDefs":[{"className":"dt-right","targets":1}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
-<div id="par-classement" class="section level2">
-<h2>Par Classement</h2>
-<div id="htmlwidget-63af3fa9c31d2af22e19" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-63af3fa9c31d2af22e19">{"x":{"filter":"none","extensions":["Buttons","ColReorder","FixedColumns"],"data":[["Classé·e 5","Classé·e 9","Classé·e 8","Classé·e 11","Classé·e 6","Classé·e 7"],[13,4,2,1,1,1]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Clast<\/th>\n      <th>Nombre<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Blfrtip","lengthMenu":[[5,25,50,-1],["5","25","50","Tout"]],"pageLength":10,"columnDefs":[{"className":"dt-right","targets":1}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div id="par-classement" class="section level3">
+<h3>- Par Classement</h3>
+<div id="htmlwidget-be1b3f248fe56fb2b4e1" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-be1b3f248fe56fb2b4e1">{"x":{"filter":"none","extensions":["Buttons","ColReorder","FixedColumns"],"data":[["Classé·e 5","Classé·e 9","Classé·e 8","Classé·e 11","Classé·e 6","Classé·e 7"],[13,4,2,1,1,1]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Classement<\/th>\n      <th>Nombre<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Blfrtip","lengthMenu":[[5,25,50,-1],["5","25","50","Tout"]],"pageLength":10,"columnDefs":[{"className":"dt-right","targets":1}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
-<div id="par-type-de-licence" class="section level2">
-<h2>Par type de licence</h2>
-<div id="htmlwidget-9482970cf860cb5fe7db" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-9482970cf860cb5fe7db">{"x":{"filter":"none","extensions":["Buttons","ColReorder","FixedColumns"],"data":[["Tradi (compétition)","Promo (entrainement)"],[17,5]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Type de licence<\/th>\n      <th>Nombre<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Blfrtip","lengthMenu":[[5,25,50,-1],["5","25","50","Tout"]],"pageLength":10,"columnDefs":[{"className":"dt-right","targets":1}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div id="par-type-de-licence" class="section level3">
+<h3>- Par type de licence</h3>
+<div id="htmlwidget-cd3bf5305a27a87f69c5" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-cd3bf5305a27a87f69c5">{"x":{"filter":"none","extensions":["Buttons","ColReorder","FixedColumns"],"data":[["Tradi (compétition)","Promo (entrainement)"],[17,5]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Type de licence<\/th>\n      <th>Nombre<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Blfrtip","lengthMenu":[[5,25,50,-1],["5","25","50","Tout"]],"pageLength":10,"columnDefs":[{"className":"dt-right","targets":1}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div id="statistiques" class="section level2">
+<h2><strong>Statistiques</strong></h2>
+<p><img src="joueurs_files/figure-html/unnamed-chunk-1-1.png" width="672" style="display: block; margin: auto;" /></p>
+<hr />
+<div id="evolution-des-joueurs-depuis-2005" class="section level3">
+<h3><strong>Evolution des joueurs</strong>, depuis 2005</h3>
+<p><span style="background-color:orange"> ** ——————————- PARTIE EN COURS DE DEVELOPPEMENT ——————————- ** </span></p>
+<div class="billboarder html-widget" style="width:100%;height:320px; position: relative;">
+<a id="htmlwidget-011277d535357e6e9bab-export" style="position:absolute; top:0; right:0; display:none; z-index:50;"></a>
+<div id="htmlwidget-011277d535357e6e9bab" class="billboarder html-widget" style="width:100%;height:320px;" width="100%" height="320px"></div>
+</div>
+<script type="application/json" data-for="htmlwidget-011277d535357e6e9bab">{"x":{"bb_opts":{"interaction":{"inputType":{"touch":false}},"line":{"classes":["billboarder-line-Ced","billboarder-line-Geo","billboarder-line-Fab","billboarder-line-Eric.O","billboarder-line-Chris","billboarder-line-Eric.B","billboarder-line-Thomas","billboarder-line-Arnaud","billboarder-line-Hugo","billboarder-line-Benjamin","billboarder-line-Pascal","billboarder-line-BenoÃ.t","billboarder-line-Rodrigue","billboarder-line-Carl","billboarder-line-Jean.Louis","billboarder-line-Ethan"]},"data":{"x":"ANNEE","json":{"ANNEE":[2001,null,2002,null,2003,null,2004,null,2005,null,2006,null,2007,null,2008,null,2009,null,2010,null,2011,null,2012,null,2013,null,2014,null,2015,null,2016,null,2017,null,2018,null,2019,null,2020,null,2021],"Ced":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,500,500,500,549,565,607,628,709,741,723,731,733,null,null,701,654,714,688,669,732,735,755],"Geo":[null,null,null,null,null,null,null,null,null,650,650,670,661,650,650,652,705,741,729,758,787,792,835,887,866,862,883,902,926,874,837,852,870,881,870,879,934,881,914,929,929],"Fab":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,500,500,542,579,663,706,784,818,846,838,849,852,859,893,873,902,919,948,929,905,897,929,910,914],"Eric.O":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,500,500,543,567,671,715,697,774,804,847,850,863,861,828,871,848,828,821,856,891,863,877,889,889],"Chris":[null,null,null,null,null,null,null,null,null,650,650,650,671,668,695,779,819,820,847,874,943,926,958,977,984,1014,1011,1004,988,993,994,979,979,979,979,988,965,971,975,974,971],"Eric.B":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,500,500,500,500,500,500,577,500,522,558,578,578],"Thomas":[null,786,858,846,900,864,null,null,774,753,816,841,954,948,960,957,1118,1274,1247,1249,null,null,null,null,1048,1069,null,null,null,null,null,null,null,null,null,null,981,1014,1064,1117,1161],"Arnaud":[null,1186,1207,1258,1300,1276,null,null,null,null,1091,1093,1067,1081,1129,1134,1186,1175,1124,1155,null,1255,null,1153,null,null,null,null,null,null,null,null,null,null,null,1018,971,968,981,983,983],"Hugo":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,500,500,500,500,500,500,500,500,522,504,500,500,504,500,500,500,519,529],"Benjamin":[null,null,null,null,null,null,null,null,null,650,650,650,650,650,650,652,650,696,770,802,752,742,746,768,795,844,823,863,878,883,887,904,893,893,914,null,null,788,774,811,799],"Pascal":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,500,null,null,null,null,null,null,null,null,null,null,500,500,507,532,570,606,626,636],"BenoÃ.t":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,500,500,500,500,500,500],"Rodrigue":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,500,500,500,500,500,500],"Carl":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,500,500,500,500,500,500,500,500,500,500,500,500],"Jean.Louis":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,500,500,500,500,500,500,500,500,500,500,null,null,null,null,500,500],"Ethan":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,500,500]},"types":{"Ced":"spline","Geo":"spline","Fab":"spline","Eric.O":"spline","Chris":"spline","Eric.B":"spline","Thomas":"spline","Arnaud":"spline","Hugo":"spline","Benjamin":"spline","Pascal":"spline","BenoÃ.t":"spline","Rodrigue":"spline","Carl":"spline","Jean.Louis":"spline","Ethan":"spline"},"colors":{"consommation":"firebrick","production":"forestgreen"}},"point":{"show":false},"axis":{"x":{"tick":{"format":"%Y-%m","fit":false}},"y":{"label":{"text":"Points","position":"outer-top"}}},"grid":{"x":{"show":true},"y":{"show":true}},"billboarderspecials":{"opacity":1},"legend":{"position":"right"},"zoom":{"enabled":{"type":"drag"},"resetButton":{"text":"Annuler le Zoom"}},"title":{"text":"Evolution annuelle des joueurs","padding":{"top":0,"right":0,"left":0,"bottom":20},"position":"left-top"},"caption":{"text":"Données FFTT"},"padding":{"bottom":20}},"data":null},"evals":[],"jsHooks":[]}</script>
+<p><span style="background-color:orange"> ** ——————————- PARTIE EN COURS DE DEVELOPPEMENT ——————————- ** </span></p>
 </div>
 </div>
 
@@ -522,7 +516,7 @@ $(document).ready(function ()  {
 
     // establish options
     var options = {
-      selectors: "h1,h2",
+      selectors: "h1,h2,h3",
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {

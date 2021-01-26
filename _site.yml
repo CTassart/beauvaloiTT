@@ -3,22 +3,20 @@ output_dir: "."
 navbar:
   title: "Beauvalois Tennis de Table"
   left:
-    - text: "Présentation"
+    - text: "Hello !"
       href: index.html
+    - text: "A propos de nous"
+      href: about.html
     - text: "Actualités"
       href: actualites.html
     - text: "Les rencontres"
       href: rencontres.html
     - text: "Joueurs"
       href: joueurs.html
-    - text: "Statistiques"
-      href: statistiques.html
     - text: "Documents"
       href: Documents.html
     - text: "Liens utiles"
       href: liens.html
-    - text: "A propos de nous"
-      href: about.html
 output:
   html_document:
     theme: cosmo

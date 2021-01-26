@@ -4,7 +4,7 @@ output:
   html_document:
     df_print: paged
     toc: yes
-    toc_depth: 2
+    toc_depth: 3
     toc_float: yes
 ---
 
@@ -20,23 +20,23 @@ Cette page est un espace de partage de divers documents :
 
 ---
 
-# <span style="color:darkred"> **Documents annuels d'inscription** </span>
+## **Documents annuels d'inscription**
 
 - [demandes de licence]()
 - [attestations médicales]()
 
 ---
 
-# <span style="color:darkred"> **Attestations de licence** </span>
+## ***Attestations de licence***
 
 - [Mesroua Jean-Louis](9_documents/licence_8014706 mesroua jean louis.pdf)
 - [Octor Guylain](9_documents/licence_8016084 octor guylain.pdf)
 
 ---
 
-# <span style="color:darkred"> **PV & comptes-rendus divers** </span>
+## ***PV & comptes-rendus divers***
 
-## 2021  
+### 2021  
 
 - [CR Assemblée Générale](https://hackmd.io/@cedTas-Perso/SJVD-QcHP)
 - [Procès Verbal Renouvellement bureau](9_documents/BeauvalTT - PV Renouvellement bureau.html)
