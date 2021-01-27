@@ -18,7 +18,7 @@ Le 🏓 **Beauvalois tennis de Table** 🏓 est un club de pratique de Tennis de
 
 # **Nos couleurs**
 
-Le <span style="color:red"> **Rouge** </span> et le Le <span style="color:black"> **Noir** </span> sont nos couleurs : nous les portons fièrement lors de nos déplacement, partout en France... (mais surtout dans la Somme).  
+Le <span style="color:red"> **rouge** </span> et le <span style="color:black"> **noir** </span> sont nos couleurs : nous les portons fièrement lors de nos déplacement, partout en France... (mais surtout dans la Somme).  
 En France, elles ont inspiré d'autres clubs, comme le **Stade Toulousain**, mais aussi de nombreux artistes : **Jeanne Mas** nous a écrit une chanson et **Stendhal** écrit un livre en l'honneur de nos couleurs.
 
 |un club de rugby (d'une <span style="color:pink"> ville rose </span> )|une chanson (artiste d'il y a longtemps)|un livre (qu'on a tous fait semblant de lire au lycée)|
@@ -27,14 +27,18 @@ En France, elles ont inspiré d'autres clubs, comme le **Stade Toulousain**, mai
 
 ---
 
-# **Pour plus d'informations et nous contacter**
+# **Notre lieu de culte et matériel de torture**
 
-<br>
+- **notre lieu de culte**  
+Pour pratiquer notre art, nous avons besoin d'espace (enfin, surtout un... Hein Eric ?!?). Alors, la [commune de Beauval](https://www.beauval.fr/) ([ici, son Fb)](https://www.facebook.com/Commune-de-Beauval-1448289485288877) nous réserve ce trèèès grand gymnase ([**Pierre Sueur**](https://www.beauval.fr/vie-associative/salle-pierre-sueur/)).
 
-- [**Notre page Facebook**](https://www.facebook.com/beauvaltennisdetable)
-- Par mail : <beauvaloistt@neuf.fr>... euuuuh oui, on a bien dit @neuf 😏.  
-- Le gymnase, aux dates et horaires d'entraînements  
-- Les signaux de fumée mais on n'est pas certain de répondre rapidement 😏.  
+![](www/Actualites/vue_gymnase_ext.png)
+
+- **notre matériel de torture**  
+  - 10 tables
+  - 1 robot d'entraînement
+  - 50 séparateurs d'aires de jeu
+  - 1 tenue de match (<span style="color:red"> **rouge** </span> et <span style="color:black"> **noire** </span>, on a dit... Faut suivre !)
 
 ---
 
@@ -52,4 +56,17 @@ Lors de la 1ère assemblée générale de l'année, nous avons procédé au reno
 
 Ces membres ont été élus selon leur classement au **Beer-Pong**... évidemment ! 
 
-<span style="background-color:steelBlue"> **Sympa les copains !** </span>
+<span style="background-color:steelBlue"> **Sympa les copains !** On balance les noms des responsables de ce fiasco dans l'onglet **Joueurs**. </span>
+
+---
+
+# **Pour plus d'informations et nous contacter**
+
+<br>
+
+- [**Notre page Facebook**](https://www.facebook.com/beauvaltennisdetable)
+- Par mail : <beauvaloistt@neuf.fr>... euuuuh oui, on a bien dit @neuf 😏.  
+- Le gymnase, aux dates et horaires d'entraînements  
+- Les signaux de fumée mais on n'est pas certain de répondre rapidement 😏.  
+
+---
