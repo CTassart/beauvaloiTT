@@ -16,6 +16,13 @@ Le 🏓 **Beauvalois tennis de Table** 🏓 est un club de pratique de Tennis de
 - en compétition ou loisirs,  
 - pour les enfants, juniors, seniors...  
 
+
+<span style="background-color:CornflowerBlue"> Le <span style="color:red"> **Rouge** </span> et le Le <span style="color:black"> **Noir** </span> sont nos couleurs. Elles ont inspiré d'autres clubs, en France, comme le **Stade Toulousain** et de nombreux artistes : **Jeanne Mas** nous a écrit une chanson et **Stendal** écrit un livre en l'honneur de nos couleurs.</span>
+
+|un club de rugby (d'une <span style="color:pink"> ville rose </span> )|une chanson (artiste d'il y a longtemps)|un livre (qu'on a tous fait semblant de lire au lycée)|
+|:---:|:---:|:---:|
+|![](www/Actualites/ST.jpg)|![](www/Actualites/JeanneMas.jpg)|![](www/Actualites/Stendhal_Le-Rouge-et-le-Noir.jpg)|
+
 ---
 
 # **Pour plus d'informations et nous contacter**
@@ -37,7 +44,7 @@ Lors de la 1ère assemblée générale de l'année, nous avons procédé au reno
 
 - **Président :** Geoffrey Masson  
 - **Trésoier :** Fabrice Valour  
-- **Secrétaire :** Cédric Tassart  
+- **Secrétaire :** Cédric Tassart (c'est aussi le type auprès de qui il faut se plaindre s'il y a des fotes d'ortografe sur le site)  
 
 ![](www/Actualites/reunion ping.jpg)
 
