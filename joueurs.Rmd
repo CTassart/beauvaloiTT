@@ -48,7 +48,7 @@ formaterTableauSimple<-function(tab){
 
 
 ```{r listeJoueurs, echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, paged.print=FALSE}
-# Fonction pour formatter les tableaux
+# Fonction pour formater les tableaux
 library(DT)
 library(dplyr)
 
@@ -126,15 +126,16 @@ ggplot(results, aes(x = xs, y = ys, color = alpha)) +
 <span style="background-color:orange"> ** ------------------------------- PARTIE EN COURS DE DEVELOPPEMENT ------------------------------- ** </span>
 
 
-```{r, echo = FALSE, fig.align='center'}
+```{r EvolJoueurs_Graph, echo = FALSE, fig.align='center'}
 library(billboarder)
-evolutionJoueurs <- read.csv2("1_joueurs/evolutionJoueurs.csv")
+library(dplyr)
+evolutionJoueurs <- read.csv2("1_joueurs/evolutionJoueurs_Tests.csv")
 billboarder() %>% 
   bb_linechart(
     data = evolutionJoueurs, 
     type = "spline"
   ) %>% 
-  bb_x_axis(tick = list(format = "%Y-%m", fit = FALSE)) %>% 
+  # bb_x_axis(tick = list(format = "%Y-%m", fit = FALSE)) %>% 
   bb_x_grid(show = TRUE) %>% 
   bb_y_grid(show = TRUE) %>% 
   bb_colors_manual("consommation" = "firebrick", "production" = "forestgreen") %>% 
@@ -148,6 +149,27 @@ billboarder() %>%
           caption = "Données FFTT")
 
 ```
+
+
+<!-- <details> -->
+<!-- <summary markdown="span">**Cliquez sur la flèche pour sélectionner le tableau de données**</summary> -->
+
+
+```{r EvolJoueurs_Donnees, echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, paged.print=FALSE}
+library(DT)
+library(dplyr)
+
+EvolJoueurs_Donnees <- read.csv2("1_joueurs/evolutionJoueurs_Tests.csv") %>% 
+  arrange(desc(ANNEE))
+formaterTableau(EvolJoueurs_Donnees)
+```
+
+<!-- </details> -->
+
+
+---
+
+
 
 <span style="background-color:orange"> ** ------------------------------- PARTIE EN COURS DE DEVELOPPEMENT ------------------------------- ** </span>
 
