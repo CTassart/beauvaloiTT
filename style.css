@@ -15,10 +15,34 @@ img {
 }
 
 .tocify-item {
+    background-color: black;
+    color: white;
+}
+
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
     background-color: red;
     color: white;
 }
 
+button.dt-button, div.dt-button, a.dt-button {
+    color: red;
+}
+button.dt-button:hover, div.dt-button, a.dt-button {
+    color: darkRed;
+    font-weight:bold;
+}
+
+table.dataTable thead th, table.dataTable thead td {
+    padding: 10px 18px;
+    border-bottom: 1px solid red;
+    border-top: 1px solid red;
+}
+table.dataTable thead th:hover, table.dataTable thead td {
+    border-bottom: 3px double white;
+    border-top: 3px double white;
+    background-color:red
+
+}
          /* background color of header (logo part) */
 .navbar-header {
           background-color: red;
@@ -26,3 +50,14 @@ img {
 .navbar-header:hover {
           background-color: black;
         } 
+        
+        
+.navbar-default .navbar-nav>li>a:hover {
+          background-color: red;
+        } 
+        
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+          color: orange;
+        } 
+         
+
