@@ -14,5 +14,15 @@ img {
     font-weight: bold;
 }
 
+.tocify-item {
+    background-color: red;
+    color: white;
+}
 
-        
+         /* background color of header (logo part) */
+.navbar-header {
+          background-color: red;
+        } 
+.navbar-header:hover {
+          background-color: black;
+        } 

@@ -10,6 +10,8 @@ output:
 
 <br>
 
+---
+
 # **Liste des joueurs**
 
 ```{r, formaterTableau, echo = FALSE, fig.align='center',message=FALSE, warning=FALSE, include=FALSE, paged.print=FALSE}
@@ -98,7 +100,7 @@ as.data.frame(listeJoueurs %>% count(`Type de licence`, sort = TRUE)) %>% rename
 
 # **Statistiques**
 
-```{r, echo = FALSE, fig.align='center'}
+```{r, echo = FALSE, fig.align='center', message=FALSE, warning=FALSE, paged.print=FALSE}
 library(tidyverse)
 cool_function <- function(x, alpha) return(sin(alpha*x))
 xs <- seq(0, pi*1.5, 0.005)
