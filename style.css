@@ -6,12 +6,31 @@ img {
 
 
 .title{
-    font-size:36px;  
+    text-shadow:0 0 2px #FF0000,0 0 30px #FF0000,5px 9px 5px #333, 0 0 150px #FF0000;color:orangeRed;
+    background-color:black;
+    font-size:44px;  
     text-align:center;
-    background-color: red;
-    color: white;
     font-family: "Georgia", Times, "Times New Roman", serif;
-    font-weight: bold;
+  text-decoration-line: none ;
+
+}
+
+h1{  
+  color:red; 
+  font-style:bold;
+  text-decoration: underline;
+  text-decoration-style: double;
+}
+
+h2 {
+  color:orangeRed;
+  font-style:italic;
+
+}
+
+hr {
+width:"100%"; color:red; height:1px; text-align:left; border:1px solid grey;
+  
 }
 
 .tocify-item {

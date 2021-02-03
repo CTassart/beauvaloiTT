@@ -14,15 +14,16 @@ output:
 
 ![](www/Actualites/entrainement.jpg)
 
-- **Entrainements**  
-  - lundi : 
-       - à compter de 18h00 pour les adultes et adolescent·e·s.  
-  - mercredi :  
-     - de 16h45 à 17h45 pour les jeunes,  
-     - à compter de 18h00 pour les adultes et adolescent·e·s.  
-- **Rencontres** 
-  - Vendredi, pour les équipes 2 et 3,
-  - Dimanche, pour l'équipe 1
+## - **Entrainements**  
+- Lundi : 
+  - à compter de 18h00 pour les adultes et adolescent·e·s.  
+- Mercredi :  
+  - de 16h45 à 17h45 pour les jeunes,  
+  - à compter de 18h00 pour les adultes et adolescent·e·s.  
+
+## - **Rencontres** 
+- Vendredi, pour les équipes 2 et 3,
+- Dimanche, pour l'équipe 1
 
 ---
 
@@ -36,7 +37,7 @@ Pour mesurer les performances des joueurs ET des équipes lors des différentes 
 
 Lors de nos différentes publications, on fera référence aux points individuels (des joueurs) et aux points cumulés correspondant à la somme des points des 4 joueurs de l’équipe.
 
-**Pour rappel, les points individuels**  
+## **Les points individuels**  
 
 Un joueur ou une joueuse commençant le tennis de table démarre avec 500 points sur sa licence. Il ou elle est donc « classé(e) 5 ».  
 Chaque partie remportée rapporte entre **0** et **40** points qu'il faut pondérer par un coefficient en fonction du type de compétition ;  
@@ -52,7 +53,7 @@ A Beauval, on a **17 joueurs** inscrits en compétition :
 - 4 « classés 9 »  
 - 1 « classé 11 ».
 
-**Les points de l’équipe**  
+## **Les points de l’équipe**  
 
 Notre club a **3 équipes** en compétition.  
 Chaque week-end, on procède à un turn-over pour que tout le monde puisse jouer. Par exemple, lors de la journée de championnat du 19 octobre, le cumul de points des équipes Beauvaloises est le suivant :  
@@ -64,8 +65,6 @@ Chaque week-end, on procède à un turn-over pour que tout le monde puisse jouer
 ---
 
 # **Tarifs**
-
-![](www/Actualites/medailles.jpg)
 
 - Juniors, Séniors , Vétérans (15 ans et +)
   - 40 € la licence promotionnelle (entrainements)
@@ -80,6 +79,8 @@ Chaque week-end, on procède à un turn-over pour que tout le monde puisse jouer
   - 40 € la licence traditionnelle
 
 La troisième licence prise dans la même famille sera à moitié prix !
+
+![](www/Actualites/medailles.jpg)
 
 ---
 
