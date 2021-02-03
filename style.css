@@ -15,6 +15,10 @@ img {
 
 }
 
+summary {
+color:steelBlue;  
+}
+
 h1{  
   color:red; 
   font-style:bold;
