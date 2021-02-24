@@ -68,7 +68,7 @@ listeJoueurs <- rio::import("1_joueurs/licencies 2020.txt") %>%
 listeJoueurs%>% 
   formaterTableau %>% 
     formatStyle(1:9,valueColumns = 9, 
-                color = styleInterval(c(900,1000,1100), c('darkBlue','white','green',"yellow")),
+                color = styleInterval(c(900,1000,1100), c('darkBlue','white','greenYellow',"yellow")),
                 backgroundColor = styleInterval(c(600,700,800,900,1000,1100), c('lightCyan', 'PowderBlue','LightSteelBlue','DodgerBlue','RoyalBlue','MediumBlue',"DarkBlue"))
     )
 # }
@@ -171,8 +171,8 @@ EvolJoueurs_Donnees <- read.csv2("1_joueurs/evolutionJoueurs_Tests.csv") %>%
   arrange(desc(ANNEE))
 EvolJoueurs_Donnees %>% 
   formaterTableau %>% 
-  formatStyle(1:17, 
-                color = styleInterval(c(900,1000,1100), c('darkBlue','white','green',"yellow")),
+  formatStyle(2:length(EvolJoueurs_Donnees), 
+                color = styleInterval(c(900,1000,1100), c('darkBlue','white','greenYellow',"yellow")),
                 backgroundColor = styleInterval(c(600,700,800,900,1000,1100), c('lightCyan', 'PowderBlue','LightSteelBlue','DodgerBlue','RoyalBlue','MediumBlue',"DarkBlue"))
     )
 
