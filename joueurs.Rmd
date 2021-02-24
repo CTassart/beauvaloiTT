@@ -30,11 +30,7 @@ formaterTableau<-function(tab){
               lengthMenu = list(c(5, 25,50, -1), c('5', '25',"50", 'Tout')),
               pageLength = 10
             )
-  )%>%
-    formatStyle(1:9,valueColumns = 9, 
-                color = styleInterval(c(900,1000,1100), c('darkBlue','white','green',"yellow")),
-                backgroundColor = styleInterval(c(600,700,800,900,1000,1100), c('lightCyan', 'PowderBlue','LightSteelBlue','DodgerBlue','RoyalBlue','MediumBlue',"DarkBlue"))
-    )
+  )
 }
 
 formaterTableauSimple<-function(tab){
@@ -67,9 +63,15 @@ listeJoueurs <- rio::import("1_joueurs/licencies 2020.txt") %>%
          `Date de naissance`=Naissance,
          `Pts (début saison)`=Points) %>% 
   select("N° Licence","Genre","Prénom","Nom","Date de naissance","Type de licence","Catégorie","Classement","Pts (début saison)") %>% 
-  arrange(desc(`Type de licence`),desc(`Pts (début saison)`),`Prénom`) 
+  arrange(desc(`Type de licence`),desc(`Pts (début saison)`),`Prénom`)
 
-formaterTableau(listeJoueurs)
+listeJoueurs%>% 
+  formaterTableau %>% 
+    formatStyle(1:9,valueColumns = 9, 
+                color = styleInterval(c(900,1000,1100), c('darkBlue','white','green',"yellow")),
+                backgroundColor = styleInterval(c(600,700,800,900,1000,1100), c('lightCyan', 'PowderBlue','LightSteelBlue','DodgerBlue','RoyalBlue','MediumBlue',"DarkBlue"))
+    )
+# }
 ```
 
 ---
@@ -167,7 +169,13 @@ library(dplyr)
 
 EvolJoueurs_Donnees <- read.csv2("1_joueurs/evolutionJoueurs_Tests.csv") %>% 
   arrange(desc(ANNEE))
-formaterTableau(EvolJoueurs_Donnees)
+EvolJoueurs_Donnees %>% 
+  formaterTableau %>% 
+  formatStyle(1:17, 
+                color = styleInterval(c(900,1000,1100), c('darkBlue','white','green',"yellow")),
+                backgroundColor = styleInterval(c(600,700,800,900,1000,1100), c('lightCyan', 'PowderBlue','LightSteelBlue','DodgerBlue','RoyalBlue','MediumBlue',"DarkBlue"))
+    )
+
 ```
 
 <!-- </details> -->
