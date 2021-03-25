@@ -11,8 +11,10 @@ navbar:
       href: actualites.html
     - text: "Les rencontres"
       href: rencontres.html
-    - text: "Joueurs"
-      href: joueurs.html
+    # - text: "Joueurs"
+    #   href: joueurs.html
+    - text: "PingPocket"
+      href: pingpocket.html
     - text: "Documents"
       href: Documents.html
     - text: "Liens utiles"

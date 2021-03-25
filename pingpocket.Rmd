@@ -1,0 +1,77 @@
+---
+title: "PingPocket"
+output:
+  html_document:
+    df_print: paged
+    toc: yes
+    toc_depth: 2
+    toc_float: yes
+---
+
+<br>
+
+# **!! PAGE EN COURS DE CONSTRUCTION !!**
+
+Les données présentées sur cette page sont issues de l'application <a target="_blank" href="https://www.pingpocket.fr" >PingPocket</a> et mises à disposition par la Fédération Française de Tennis de Table **(FFTT)**.
+
+# Accès directs aux pages de **PingPocket**
+- <a href="https://www.pingpocket.fr/app/fftt/clubs/07800147" > Accèder à la page de **Beauval TT**</a>
+- <a href="https://www.pingpocket.fr/app/fftt/clubs/07800147/licencies?SORT=ALPHABETIC" >Joueurs par ordre alphabétique</a>
+- <a href="https://www.pingpocket.fr/app/fftt/clubs/07800147/licencies?SORT=OFFICIAL_RANK" >Joueurs par classement officiel</a>
+- <a href="https://www.pingpocket.fr/app/fftt/clubs/07800147/licencies?SORT=MONTHLY_INCREASE" >Joueurs par progression mensuelle</a>
+- <a href="https://www.pingpocket.fr/app/fftt/clubs/07800147/licencies?SORT=SEASON_INCREASE" >Joueurs par progression annuelle</a>
+- <a href="https://www.pingpocket.fr/app/fftt/clubs/07800147/licencies?SORT=CATEGORY" >Joueurs par catégorie d'âge</a>
+- <a href="https://www.pingpocket.fr/app/fftt/clubs/07800147/equipes" >Liste des équipes (phase en cours)</a>
+- <a href="https://www.pingpocket.fr/app/fftt/clubs/07800147/equipes/classements?documentReferrer=http://beauvaloistt.fr" >Classements des équipes (phase en cours)</a>
+- <a href="https://www.pingpocket.fr/app/fftt/clubs/07800147/equipes/1/championnats/masculin" >Equipe 1 masculine</a>
+- <a href="https://www.pingpocket.fr/app/fftt/clubs/07800147/equipes/2/championnats/masculin" >Equipe 2 masculine</a>
+- <a href="https://www.pingpocket.fr/app/fftt/clubs/07800147/equipes/3/championnats/masculin" >Equipe 3 masculine</a>
+
+# Notre club : le **Beauval TT**
+
+<iframe frameborder="1" name="pingpocket" width="100%" height="800" scrolling="auto" src="https://www.pingpocket.fr/app/fftt/clubs/07800147" >
+<p>iframe non supportée</p></iframe>
+<a href="https://www.pingpocket.fr/app/fftt/clubs/07800147" > BEAUVAL TT</a>
+
+# Nos joueurs, par ordre alphabétique
+<iframe frameborder="1" name="pingpocket" width="100%" height="800" scrolling="auto" src="https://www.pingpocket.fr/app/fftt/clubs/07800147/licencies?SORT=ALPHABETIC" ><p>iframe non supportée</p></iframe>
+<a href="https://www.pingpocket.fr/app/fftt/clubs/07800147/licencies?SORT=ALPHABETIC" >Joueurs par ordre alphabétique</a>
+
+# Nos joueurs, selon le classement officiel 
+<iframe frameborder="1" name="pingpocket" width="100%" height="800" scrolling="auto" src="https://www.pingpocket.fr/app/fftt/clubs/07800147/licencies?SORT=OFFICIAL_RANK" ><p>iframe non supportée</p></iframe>
+<a href="https://www.pingpocket.fr/app/fftt/clubs/07800147/licencies?SORT=OFFICIAL_RANK" >Joueurs par classement officiel</a>
+
+# Nos joueurs, selon leur progression **mensuelle** 
+<iframe frameborder="1" name="pingpocket" width="100%" height="800" scrolling="auto" src="https://www.pingpocket.fr/app/fftt/clubs/07800147/licencies?SORT=MONTHLY_INCREASE" ><p>iframe non supportée</p></iframe>
+<a href="https://www.pingpocket.fr/app/fftt/clubs/07800147/licencies?SORT=MONTHLY_INCREASE" >Joueurs par progression mensuelle</a>
+
+# Nos joueurs, selon leur progression **annuelle** 
+<iframe frameborder="1" name="pingpocket" width="100%" height="800" scrolling="auto" src="https://www.pingpocket.fr/app/fftt/clubs/07800147/licencies?SORT=SEASON_INCREASE" ><p>iframe non supportée</p></iframe>
+<a href="https://www.pingpocket.fr/app/fftt/clubs/07800147/licencies?SORT=SEASON_INCREASE" >Joueurs par progression annuelle</a>
+
+# Nos joueurs, par catégorie d'âge
+<iframe frameborder="1" name="pingpocket" width="100%" height="800" scrolling="auto" src="https://www.pingpocket.fr/app/fftt/clubs/07800147/licencies?SORT=CATEGORY" ><p>iframe non supportée</p></iframe>
+<a href="https://www.pingpocket.fr/app/fftt/clubs/07800147/licencies?SORT=CATEGORY" >Joueurs par catégorie d'âge</a>
+
+
+# Les équipes du club - Phase en cours (inaccessible pendant l'interruption "Covid")
+<iframe frameborder="1" name="pingpocket" width="100%" height="800" scrolling="auto" src="https://www.pingpocket.fr/app/fftt/clubs/07800147/equipes" ><p>iframe non supportée</p></iframe>
+<a href="https://www.pingpocket.fr/app/fftt/clubs/07800147/equipes" >Liste des équipes (phase en cours)</a>
+
+# Classement des équipes - Phase en cours (inaccessible pendant l'interruption "Covid")
+<iframe frameborder="1" name="pingpocket" width="100%" height="800" scrolling="auto" src="https://www.pingpocket.fr/app/fftt/clubs/07800147/equipes/classements?documentReferrer=http://beauvaloistt.fr" ><p>iframe non supportée</p></iframe>
+<a href="https://www.pingpocket.fr/app/fftt/clubs/07800147/equipes/classements?documentReferrer=http://beauvaloistt.fr" >Classements des équipes (phase en cours)</a>
+
+
+# Equipe 1 - Phase en cours (inaccessible pendant l'interruption "Covid")
+<iframe frameborder="1" name="pingpocket" width="100%" height="800" scrolling="auto" src="https://www.pingpocket.fr/app/fftt/clubs/07800147/equipes/1/championnats/masculin" ><p>iframe non supportée</p></iframe>
+<a href="https://www.pingpocket.fr/app/fftt/clubs/07800147/equipes/1/championnats/masculin" >Equipe 1 masculine</a>
+
+
+# Equipe 2 - Phase en cours (inaccessible pendant l'interruption "Covid")
+<iframe frameborder="1" name="pingpocket" width="100%" height="800" scrolling="auto" src="https://www.pingpocket.fr/app/fftt/clubs/07800147/equipes/2/championnats/masculin" ><p>iframe non supportée</p></iframe>
+<a href="https://www.pingpocket.fr/app/fftt/clubs/07800147/equipes/2/championnats/masculin" >Equipe 2 masculine</a>
+
+# Equipe 3 - Phase en cours (inaccessible pendant l'interruption "Covid")
+<iframe frameborder="1" name="pingpocket" width="100%" height="800" scrolling="auto" src="https://www.pingpocket.fr/app/fftt/clubs/07800147/equipes/3/championnats/masculin" ><p>iframe non supportée</p></iframe>
+<a href="https://www.pingpocket.fr/app/fftt/clubs/07800147/equipes/3/championnats/masculin" >Equipe 3 masculine</a>

@@ -32,6 +32,10 @@ h2 {
 
 }
 
+a{
+  color:orange;
+}
+
 hr {
 width:"100%"; color:red; height:1px; text-align:left; border:1px solid grey;
   
