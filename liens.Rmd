@@ -10,4 +10,17 @@ output:
 
 <br>
 
-A venir
+---
+
+# Instances officielles
+- [FFTT](http://www.fftt.com/site/)
+- [Ligue des Hauts-de-France](https://www.pingpocket.fr/#page-5)
+- [Coordonnées du Comité Départemental de la Somme](https://www.pingpocket.fr/#page-10)
+
+
+# Forum
+- [tennis2table.com](https://tennis2table.com/)
+- [tennis-de-table.com](https://www.tennis-de-table.com/)
+- [ITTF TV](https://tv.ittf.com/)
+- [PingPocket TV](https://www.pingpocket.fr/#page-19)
+

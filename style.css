@@ -4,10 +4,9 @@ img {
   margin: 0 auto;
 }
 
-
 .title{
-    text-shadow:0 0 2px #FF0000,0 0 30px #FF0000,5px 9px 5px #333, 0 0 150px #FF0000;color:orangeRed;
-    background-color:black;
+    text-shadow:0 0 2px #FF0000,0 0 30px #FF0000,5px 9px 5px #333, 0 0 150px #FF0000;color:lightSteelBlue;
+    background-color:steelBlue;
     font-size:44px;  
     text-align:center;
     font-family: "Georgia", Times, "Times New Roman", serif;
@@ -20,71 +19,71 @@ color:steelBlue;
 }
 
 h1{  
-  color:red; 
+  color:steelBlue; 
   font-style:bold;
   text-decoration: underline;
-  text-decoration-style: double;
+/*  text-decoration-style: double;*/
 }
 
 h2 {
-  color:orangeRed;
+  color:lightSteelBlue;
   font-style:italic;
-
-}
-
-a{
-  color:orange;
 }
 
 hr {
-width:"100%"; color:red; height:1px; text-align:left; border:1px solid grey;
-  
+    border: 0;
+    height: 0; /* Firefox... */
+    box-shadow: 0 0 10px 1px black;
 }
 
+hr:after {  /* Not really supposed to work, but does */
+    content: "\00a0";  /* Prevent margin collapse */
+}
+
+
 .tocify-item {
-    background-color: black;
+    background-color: steelBlue;
     color: white;
 }
 
 .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
-    background-color: red;
-    color: white;
+    background-color: lightSteelBlue;
+    color: steelBlue;
 }
-
+/*
 button.dt-button, div.dt-button, a.dt-button {
-    color: red;
+    color: steelBlue;
 }
 button.dt-button:hover, div.dt-button, a.dt-button {
-    color: darkRed;
+    color: steelBlue;
     font-weight:bold;
 }
 
 table.dataTable thead th, table.dataTable thead td {
     padding: 10px 18px;
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid steelBlue;
     border-top: 1px solid red;
 }
 table.dataTable thead th:hover, table.dataTable thead td {
     border-bottom: 3px double white;
     border-top: 3px double white;
-    background-color:red
+    background-color:steelBlue
 
 }
-         /* background color of header (logo part) */
-.navbar-header {
-          background-color: red;
-        } 
-.navbar-header:hover {
+*/
+
+/* background color of header (logo part) */
+
+.navbar-header .navbar-header:hover {
           background-color: black;
         } 
-        
-        
-.navbar-default .navbar-nav>li>a:hover {
-          background-color: red;
+      
+.navbar-default .navbar-header:hover .navbar-nav>li>a:hover {
+          background-color: steelBlue;
         } 
         
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
-          color: orange;
+          color: lightSteelBlue;
         } 
          
 
