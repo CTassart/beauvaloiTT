@@ -9,7 +9,7 @@ navbar:
       href: about.html
     - text: "Actualités"
       href: actualites.html
-    - text: "Les rencontres"
+    - text: "Nos rencontres"
       href: rencontres.html
     - text: "PingPocket"
       href: pingpocket.html
