@@ -58,6 +58,7 @@ Sinon, posez la question à un type (ou une fille) du club
 <summary markdown="span">**Cliquez sur la flèche pour accéder aux différents documents**</summary>
 
 - [CR Assemblée Générale](https://hackmd.io/@cedTas-Perso/SJVD-QcHP)
-- [Procès Verbal Renouvellement bureau](9_documents/BeauvalTT - PV Renouvellement bureau.html)
+- [Renouvellement bureau - Procès Verbal](9_documents/BeauvalTT - PV Renouvellement bureau.html)
+- [Renouvellement Bureau - Récépissé préfecture](9_documents/RecepissePref_Decla_Modif_Bureau.pdf)
 
 </details>
